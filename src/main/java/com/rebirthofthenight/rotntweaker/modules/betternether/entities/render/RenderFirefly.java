@@ -13,7 +13,7 @@ public class RenderFirefly extends RenderLiving<EntityFirefly>
 	public RenderFirefly(RenderManager rendermanagerIn)
 	{
 		super(rendermanagerIn, new ModelFirefly(), 0.1F);
-		texture = new ResourceLocation("betternether", "textures/entities/firefly.png");
+		texture = new ResourceLocation("rotntweaker", "textures/entities/firefly.png");
 	}
 
 	@Override

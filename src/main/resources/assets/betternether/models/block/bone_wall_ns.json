@@ -1,9 +1,9 @@
 {
 	"__comment": "Designed by Paulevs with Cubik Studio - https://cubik.studio",
 	"textures": {
-		"particle": "betternether:blocks/bone_wall_side",
-		"side": "betternether:blocks/bone_wall_side",
-		"top": "betternether:blocks/bone_wall_top_ns"
+		"particle": "rotntweaker:blocks/bone_wall_side",
+		"side": "rotntweaker:blocks/bone_wall_side",
+		"top": "rotntweaker:blocks/bone_wall_top_ns"
 	},
 	"elements": [ 	 
 		{

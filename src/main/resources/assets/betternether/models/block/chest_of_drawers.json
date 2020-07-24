@@ -2,11 +2,11 @@
 	"__comment": "Designed by Paulevs with Cubik Studio - https://cubik.studio",
 	"parent": "block/block",
 	"textures": {
-		"particle": "betternether:blocks/chest_of_drawers_back",
-		"front": "betternether:blocks/chest_of_drawers_front",
-		"back": "betternether:blocks/chest_of_drawers_back",
-		"side": "betternether:blocks/chest_of_drawers_side",
-		"top": "betternether:blocks/chest_of_drawers_top"
+		"particle": "rotntweaker:blocks/chest_of_drawers_back",
+		"front": "rotntweaker:blocks/chest_of_drawers_front",
+		"back": "rotntweaker:blocks/chest_of_drawers_back",
+		"side": "rotntweaker:blocks/chest_of_drawers_side",
+		"top": "rotntweaker:blocks/chest_of_drawers_top"
 	},
 	"elements": [ 	 
 		{

@@ -6,11 +6,11 @@
   ],
   "key": {
     "#": {
-      "item": "betternether:cincinnasite_slab_half",
+      "item": "rotntweaker:cincinnasite_slab_half",
 	  "data": 0
     }
   },
   "result": {
-    "item": "betternether:cincinnasite_tile_large"
+    "item": "rotntweaker:cincinnasite_tile_large"
   }
 }

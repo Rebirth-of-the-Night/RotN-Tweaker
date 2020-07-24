@@ -4,7 +4,7 @@ import net.minecraft.block.Block;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.MapColor;
 import net.minecraft.block.material.Material;
-import com.rebirthofthenight.rotntweaker.modules.betternether.BetterNether;
+import com.rebirthofthenight.rotntweaker.RotNTweaker;
 
 public class BlockCincinnasite extends Block 
 {
@@ -16,6 +16,6 @@ public class BlockCincinnasite extends Block
 		this.setSoundType(SoundType.METAL);
 		this.setUnlocalizedName(name);
 		this.setRegistryName(name);
-		this.setCreativeTab(BetterNether.BN_TAB);
+		this.setCreativeTab(RotNTweaker.BN_TAB);
 	}
 }

@@ -1,6 +1,6 @@
 package com.rebirthofthenight.rotntweaker.modules.betternether.blocks;
 
-import com.rebirthofthenight.rotntweaker.modules.betternether.BetterNether;
+import com.rebirthofthenight.rotntweaker.RotNTweaker;
 
 public class BlockStalagnateMiddle extends BlockStalagnateBase
 {
@@ -8,6 +8,6 @@ public class BlockStalagnateMiddle extends BlockStalagnateBase
 	{
 		super();
 		this.setRegistryName("stalagnate_middle");
-		this.setCreativeTab(BetterNether.BN_TAB);
+		this.setCreativeTab(RotNTweaker.BN_TAB);
 	}
 }

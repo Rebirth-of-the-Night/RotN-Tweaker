@@ -1,6 +1,6 @@
 {
     "variants": {
-        "powered=false": { "model": "betternether:reeds_pressure_plate_up" },
-        "powered=true": { "model": "betternether:reeds_pressure_plate_down" }
+        "powered=false": { "model": "rotntweaker:reeds_pressure_plate_up" },
+        "powered=true": { "model": "rotntweaker:reeds_pressure_plate_down" }
     }
 }

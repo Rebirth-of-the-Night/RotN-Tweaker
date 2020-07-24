@@ -2,8 +2,8 @@
     "parent": "block/block",
 	"textures":
 	{
-        "particle": "betternether:blocks/black_bush",
-        "texture": "betternether:blocks/black_bush"
+        "particle": "rotntweaker:blocks/black_bush",
+        "texture": "rotntweaker:blocks/black_bush"
     },
     "elements": [
         {   "from": [ 4, 0, 4 ],

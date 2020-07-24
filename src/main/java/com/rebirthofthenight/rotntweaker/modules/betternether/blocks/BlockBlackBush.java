@@ -19,7 +19,7 @@ import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
-import com.rebirthofthenight.rotntweaker.modules.betternether.BetterNether;
+import com.rebirthofthenight.rotntweaker.RotNTweaker;
 
 public class BlockBlackBush extends Block
 {
@@ -29,7 +29,7 @@ public class BlockBlackBush extends Block
 	public BlockBlackBush()
 	{
 		super(Material.PLANTS, MapColor.OBSIDIAN);
-		this.setCreativeTab(BetterNether.BN_TAB);
+		this.setCreativeTab(RotNTweaker.BN_TAB);
 		this.setHardness(1.0F);
 		this.setSoundType(SoundType.PLANT);
 		this.setRegistryName("black_bush");

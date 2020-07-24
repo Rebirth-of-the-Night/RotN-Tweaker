@@ -1,10 +1,10 @@
 {
 	"__comment": "Designed by Paulevs with Cubik Studio - https://cubik.studio",
 	"textures": {
-		"particle": "betternether:blocks/stalagnate_trunk_middle",
-		"side": "betternether:blocks/stalagnate_trunk_middle",
-		"top": "betternether:blocks/stalagnate_top",
-		"apple": "betternether:blocks/black_apple"
+		"particle": "rotntweaker:blocks/stalagnate_trunk_middle",
+		"side": "rotntweaker:blocks/stalagnate_trunk_middle",
+		"top": "rotntweaker:blocks/stalagnate_top",
+		"apple": "rotntweaker:blocks/black_apple"
 	},
 	"elements": [ 	 
 		{

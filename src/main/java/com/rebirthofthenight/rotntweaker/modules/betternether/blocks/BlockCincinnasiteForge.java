@@ -32,7 +32,7 @@ import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
-import com.rebirthofthenight.rotntweaker.modules.betternether.BetterNether;
+import com.rebirthofthenight.rotntweaker.RotNTweaker;
 import com.rebirthofthenight.rotntweaker.modules.betternether.tileentities.TileEntityForge;
 
 public class BlockCincinnasiteForge extends BlockContainer
@@ -49,7 +49,7 @@ public class BlockCincinnasiteForge extends BlockContainer
 		this.setHardness(3.0F);
 		this.setResistance(10.0F);
 		this.setSoundType(SoundType.METAL);
-		this.setCreativeTab(BetterNether.BN_TAB);
+		this.setCreativeTab(RotNTweaker.BN_TAB);
 		this.setDefaultState(this.blockState.getBaseState().withProperty(FACING, EnumFacing.NORTH).withProperty(ACTIVE, false));
 	}
 	

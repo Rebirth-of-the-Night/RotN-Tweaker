@@ -2,9 +2,9 @@
 	"__comment": "Designed by Paulevs with Cubik Studio - https://cubik.studio",
 	"ambientocclusion": false,
 	"textures": {
-		"particle": "betternether:blocks/gray_mold_side",
-		"side": "betternether:blocks/gray_mold_side",
-		"bottom": "betternether:blocks/gray_mold_bottom"
+		"particle": "rotntweaker:blocks/gray_mold_side",
+		"side": "rotntweaker:blocks/gray_mold_side",
+		"bottom": "rotntweaker:blocks/gray_mold_bottom"
 	},
 	"elements": [ 	 
 		{

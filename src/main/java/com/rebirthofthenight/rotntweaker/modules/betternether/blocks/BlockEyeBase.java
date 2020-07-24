@@ -13,7 +13,7 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
-import com.rebirthofthenight.rotntweaker.modules.betternether.BetterNether;
+import com.rebirthofthenight.rotntweaker.RotNTweaker;
 
 public class BlockEyeBase extends Block
 {
@@ -23,7 +23,7 @@ public class BlockEyeBase extends Block
         this.setSoundType(SoundType.SLIME);
         this.setHardness(0.5F);
         this.setResistance(0.5F);
-        this.setCreativeTab(BetterNether.BN_TAB);
+        this.setCreativeTab(RotNTweaker.BN_TAB);
 	}
 	
 	@Override

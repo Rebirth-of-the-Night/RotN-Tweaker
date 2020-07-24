@@ -20,7 +20,7 @@ import net.minecraft.util.math.AxisAlignedBB;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
-import com.rebirthofthenight.rotntweaker.modules.betternether.BetterNether;
+import com.rebirthofthenight.rotntweaker.RotNTweaker;
 
 public class BlockMagmaFlower extends Block
 {
@@ -35,7 +35,7 @@ public class BlockMagmaFlower extends Block
 		this.setHardness(0.5F);
 		this.setSoundType(SoundType.PLANT);
 		this.setDefaultState(this.blockState.getBaseState().withProperty(SIZE, 0));
-		this.setCreativeTab(BetterNether.BN_TAB);
+		this.setCreativeTab(RotNTweaker.BN_TAB);
 		this.setTickRandomly(true);
 	}
 	

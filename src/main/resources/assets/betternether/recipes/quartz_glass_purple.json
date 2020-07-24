@@ -1,1 +1,23 @@
-{  "type": "minecraft:crafting_shaped",  "pattern": [    "###",    "#D#",    "###"  ],  "key": {    "#": {      "item": "betternether:quartz_glass",      "data": 32767    },  "D": {      "type": "forge:ore_dict",      "ore": "dyePurple"    }  },  "result": {    "item": "betternether:quartz_stained_glass",    "data": 10,    "count": 8  }}
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "#D#",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "rotntweaker:quartz_glass",
+      "data": 32767
+    },
+  "D": {
+      "type": "forge:ore_dict",
+      "ore": "dyePurple"
+    }
+  },
+  "result": {
+    "item": "rotntweaker:quartz_stained_glass",
+    "data": 10,
+    "count": 8
+  }
+}

@@ -1,6 +1,6 @@
 {
-    "parent": "betternether:block/quartz_glass",
+    "parent": "rotntweaker:block/quartz_glass",
 	"textures": {
-        "all": "betternether:items/quartz_glass"
+        "all": "rotntweaker:items/quartz_glass"
     }
 }

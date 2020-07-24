@@ -22,7 +22,7 @@ import net.minecraftforge.fml.common.registry.ForgeRegistries;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 import net.minecraftforge.oredict.OreDictionary;
-import com.rebirthofthenight.rotntweaker.modules.betternether.BetterNether;
+import com.rebirthofthenight.rotntweaker.RotNTweaker;
 import com.rebirthofthenight.rotntweaker.modules.betternether.config.ConfigLoader;
 
 public class BlocksRegister
@@ -324,7 +324,7 @@ public class BlocksRegister
 			ForgeRegistries.ITEMS.register(
 					new ItemDoor(block)
 					.setRegistryName(block.getRegistryName())
-					.setCreativeTab(BetterNether.BN_TAB));
+					.setCreativeTab(RotNTweaker.BN_TAB));
 			renders.add(block);
 			return block;
 		}

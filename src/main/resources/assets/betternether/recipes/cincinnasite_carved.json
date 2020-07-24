@@ -6,11 +6,11 @@
   ],
   "key": {
     "#": {
-      "item": "betternether:cincinnasite_forged"
+      "item": "rotntweaker:cincinnasite_forged"
     }
   },
   "result": {
-    "item": "betternether:cincinnasite_carved",
+    "item": "rotntweaker:cincinnasite_carved",
 	"count": 4
   }
 }

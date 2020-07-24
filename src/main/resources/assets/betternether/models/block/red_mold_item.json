@@ -3,9 +3,9 @@
 	"parent": "block/block",
 	"ambientocclusion": false,
 	"textures": {
-		"particle": "betternether:blocks/red_mold_top",
-		"texture": "betternether:blocks/red_mold_top",
-		"bottom": "betternether:blocks/red_mold_bottom"
+		"particle": "rotntweaker:blocks/red_mold_top",
+		"texture": "rotntweaker:blocks/red_mold_top",
+		"bottom": "rotntweaker:blocks/red_mold_bottom"
 	},
 	"elements": [ 	 
 		{

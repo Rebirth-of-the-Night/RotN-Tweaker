@@ -1,12 +1,12 @@
 {
     "parent": "block/cube",
     "textures": {
-        "particle": "betternether:blocks/nether_mycelium_side",
+        "particle": "rotntweaker:blocks/nether_mycelium_side",
         "down": "blocks/netherrack",
         "up": "blocks/mycelium_top",
-        "north": "betternether:blocks/nether_mycelium_side",
-        "east": "betternether:blocks/nether_mycelium_side",
-        "south": "betternether:blocks/nether_mycelium_side",
-        "west": "betternether:blocks/nether_mycelium_side"
+        "north": "rotntweaker:blocks/nether_mycelium_side",
+        "east": "rotntweaker:blocks/nether_mycelium_side",
+        "south": "rotntweaker:blocks/nether_mycelium_side",
+        "west": "rotntweaker:blocks/nether_mycelium_side"
     }
 }

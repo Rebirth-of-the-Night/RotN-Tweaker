@@ -21,7 +21,7 @@ import net.minecraft.util.IStringSerializable;
 import net.minecraft.util.SoundCategory;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
-import com.rebirthofthenight.rotntweaker.modules.betternether.BetterNether;
+import com.rebirthofthenight.rotntweaker.RotNTweaker;
 
 public abstract class BlockBNStoneSlab extends BlockSlab
 {
@@ -32,7 +32,7 @@ public abstract class BlockBNStoneSlab extends BlockSlab
 		super(Material.ROCK, MapColor.LIME_STAINED_HARDENED_CLAY);
 		this.setSoundType(SoundType.STONE);
 		this.setHardness(1.5F);
-		this.setCreativeTab(BetterNether.BN_TAB);
+		this.setCreativeTab(RotNTweaker.BN_TAB);
 		this.setUnlocalizedName(name);
 		this.setRegistryName(name);
 		IBlockState iblockstate = this.blockState.getBaseState();

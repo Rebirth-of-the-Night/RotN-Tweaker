@@ -2,9 +2,9 @@
 	"__comment": "Designed by Paulevs with Cubik Studio - https://cubik.studio",
 	"parent": "block/block",
 	"textures": {
-		"particle": "betternether:blocks/cactus_middle_side",
-		"side": "betternether:blocks/cactus_middle_side",
-		"top": "betternether:blocks/cactus_middle_top"
+		"particle": "rotntweaker:blocks/cactus_middle_side",
+		"side": "rotntweaker:blocks/cactus_middle_side",
+		"top": "rotntweaker:blocks/cactus_middle_top"
 	},
 	"elements": [ 	 
 		{

@@ -9,11 +9,11 @@
 	  "data": 32767
     },
 	"P": {
-      "item": "betternether:cincinnasite_pickaxe",
+      "item": "rotntweaker:cincinnasite_pickaxe",
 	  "data": 0
     }
   },
   "result": {
-    "item": "betternether:cincinnasite_pickaxe_diamond"
+    "item": "rotntweaker:cincinnasite_pickaxe_diamond"
   }
 }

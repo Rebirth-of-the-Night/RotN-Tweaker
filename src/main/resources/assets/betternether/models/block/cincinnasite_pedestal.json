@@ -2,9 +2,9 @@
 	"__comment": "Designed by Paulevs with Cubik Studio - https://cubik.studio",
 	"parent": "block/block",
 	"textures": {
-		"particle": "betternether:blocks/cincinnasite_pedestal_side",
-		"side": "betternether:blocks/cincinnasite_pedestal_side",
-		"top": "betternether:blocks/cincinnasite_pedestal_top"
+		"particle": "rotntweaker:blocks/cincinnasite_pedestal_side",
+		"side": "rotntweaker:blocks/cincinnasite_pedestal_side",
+		"top": "rotntweaker:blocks/cincinnasite_pedestal_top"
 	},
 	"elements": [ 	 
 		{

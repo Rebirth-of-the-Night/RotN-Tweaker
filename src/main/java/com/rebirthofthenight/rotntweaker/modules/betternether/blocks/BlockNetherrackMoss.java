@@ -2,7 +2,7 @@ package com.rebirthofthenight.rotntweaker.modules.betternether.blocks;
 
 import net.minecraft.block.BlockNetherrack;
 import net.minecraft.block.SoundType;
-import com.rebirthofthenight.rotntweaker.modules.betternether.BetterNether;
+import com.rebirthofthenight.rotntweaker.RotNTweaker;
 
 public class BlockNetherrackMoss extends BlockNetherrack
 {
@@ -12,6 +12,6 @@ public class BlockNetherrackMoss extends BlockNetherrack
 		this.setSoundType(SoundType.STONE);
 		this.setRegistryName("netherrack_moss");
 		this.setUnlocalizedName("netherrack_moss");
-		this.setCreativeTab(BetterNether.BN_TAB);
+		this.setCreativeTab(RotNTweaker.BN_TAB);
 	}
 }

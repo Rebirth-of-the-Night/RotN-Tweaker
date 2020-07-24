@@ -1,6 +1,6 @@
 {
     "parent": "block/pressure_plate_down",
     "textures": {
-        "texture": "betternether:blocks/bone_block_plate"
+        "texture": "rotntweaker:blocks/bone_block_plate"
     }
 }

@@ -1,6 +1,6 @@
 {
-    "parent": "betternether:block/grass_fan_pot",
+    "parent": "rotntweaker:block/grass_fan_pot",
     "textures": {
-        "texture": "betternether:blocks/ngrass_1"
+        "texture": "rotntweaker:blocks/ngrass_1"
     }
 }

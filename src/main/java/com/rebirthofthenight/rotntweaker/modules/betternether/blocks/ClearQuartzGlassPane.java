@@ -6,7 +6,7 @@ import net.minecraft.block.material.Material;
 import net.minecraft.util.BlockRenderLayer;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
-import com.rebirthofthenight.rotntweaker.modules.betternether.BetterNether;
+import com.rebirthofthenight.rotntweaker.RotNTweaker;
 
 public class ClearQuartzGlassPane extends BlockPane
 {
@@ -18,7 +18,7 @@ public class ClearQuartzGlassPane extends BlockPane
 		this.setSoundType(SoundType.GLASS);
 		this.setUnlocalizedName(name);
 		this.setRegistryName(name);
-		this.setCreativeTab(BetterNether.BN_TAB);
+		this.setCreativeTab(RotNTweaker.BN_TAB);
 	}
 	
 	@Override

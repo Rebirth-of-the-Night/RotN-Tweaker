@@ -7,7 +7,7 @@
   ],
   "key": {
     "#": {
-      "item": "betternether:cincinnasite_forged"
+      "item": "rotntweaker:cincinnasite_forged"
     },
 	"G": {
       "item": "minecraft:glowstone",
@@ -15,6 +15,6 @@
     }
   },
   "result": {
-    "item": "betternether:cincinnasite_lantern"
+    "item": "rotntweaker:cincinnasite_lantern"
   }
 }

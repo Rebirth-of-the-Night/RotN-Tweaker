@@ -1,6 +1,6 @@
 {
     "parent": "block/cross",
     "textures": {
-        "cross": "betternether:blocks/stalagnate_roots"
+        "cross": "rotntweaker:blocks/stalagnate_roots"
     }
 }

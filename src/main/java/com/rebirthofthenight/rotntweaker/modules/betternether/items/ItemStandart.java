@@ -1,7 +1,7 @@
 package com.rebirthofthenight.rotntweaker.modules.betternether.items;
 
 import net.minecraft.item.Item;
-import com.rebirthofthenight.rotntweaker.modules.betternether.BetterNether;
+import com.rebirthofthenight.rotntweaker.RotNTweaker;
 
 public class ItemStandart extends Item
 {
@@ -9,6 +9,6 @@ public class ItemStandart extends Item
 	{
 		this.setRegistryName(name);
 		this.setUnlocalizedName(name);
-		this.setCreativeTab(BetterNether.BN_TAB);
+		this.setCreativeTab(RotNTweaker.BN_TAB);
 	}
 }

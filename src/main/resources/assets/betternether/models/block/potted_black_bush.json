@@ -1,9 +1,9 @@
 {
 	"__comment": "Designed by Paulevs with Cubik Studio - https://cubik.studio",
 	"textures": {
-		"particle": "betternether:blocks/black_bush",
-		"texture": "betternether:blocks/black_bush",
-		"stem": "betternether:blocks/ink_bush_bark"
+		"particle": "rotntweaker:blocks/black_bush",
+		"texture": "rotntweaker:blocks/black_bush",
+		"stem": "rotntweaker:blocks/ink_bush_bark"
 	},
 	"elements": [ 	 
 		{

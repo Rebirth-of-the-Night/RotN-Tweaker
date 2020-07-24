@@ -2,10 +2,10 @@
 	"__comment": "Designed by Paulevs with Cubik Studio - https://cubik.studio",
 	"parent": "block/block",
 	"textures": {
-		"particle": "betternether:blocks/magma_flower_side",
-		"side": "betternether:blocks/magma_flower_side",
-		"top": "betternether:blocks/magma_flower_top",
-		"leaf": "betternether:blocks/magma_flower_leaf"
+		"particle": "rotntweaker:blocks/magma_flower_side",
+		"side": "rotntweaker:blocks/magma_flower_side",
+		"top": "rotntweaker:blocks/magma_flower_top",
+		"leaf": "rotntweaker:blocks/magma_flower_leaf"
 	},
 	"elements": [ 	 
 		{

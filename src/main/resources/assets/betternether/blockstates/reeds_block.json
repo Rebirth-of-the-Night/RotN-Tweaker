@@ -1,7 +1,7 @@
 {
     "variants": {
-        "axis=y": { "model": "betternether:reeds_block" },
-        "axis=z": { "model": "betternether:reeds_block", "x": 90 },
-        "axis=x": { "model": "betternether:reeds_block", "x": 90, "y": 90 }
+        "axis=y": { "model": "rotntweaker:reeds_block" },
+        "axis=z": { "model": "rotntweaker:reeds_block", "x": 90 },
+        "axis=x": { "model": "rotntweaker:reeds_block", "x": 90, "y": 90 }
     }
 }

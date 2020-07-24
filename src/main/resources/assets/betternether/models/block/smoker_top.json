@@ -2,8 +2,8 @@
 	"__comment": "Designed by Paulevs with Cubik Studio - https://cubik.studio",
 	"parent": "block/block",
 	"textures": {
-		"particle": "betternether:blocks/smoker_top",
-		"texture": "betternether:blocks/smoker_top"
+		"particle": "rotntweaker:blocks/smoker_top",
+		"texture": "rotntweaker:blocks/smoker_top"
 	},
 	"elements": [ 	 
 		{

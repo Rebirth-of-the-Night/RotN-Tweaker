@@ -1,6 +1,6 @@
 {
     "parent": "block/cross",
     "textures": {
-        "cross": "betternether:blocks/ink_bush_seed"
+        "cross": "rotntweaker:blocks/ink_bush_seed"
     }
 }

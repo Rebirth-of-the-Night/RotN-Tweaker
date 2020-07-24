@@ -15,7 +15,7 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.IBlockAccess;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
-import com.rebirthofthenight.rotntweaker.modules.betternether.BetterNether;
+import com.rebirthofthenight.rotntweaker.RotNTweaker;
 
 public class BlockStalagnateStem extends Block
 {
@@ -28,7 +28,7 @@ public class BlockStalagnateStem extends Block
 		this.setUnlocalizedName("stalagnate");
 		this.setSoundType(SoundType.WOOD);
 		this.setRegistryName("stalagnate_stem");
-		this.setCreativeTab(BetterNether.BN_TAB);
+		this.setCreativeTab(RotNTweaker.BN_TAB);
 	}
 	
 	@Override

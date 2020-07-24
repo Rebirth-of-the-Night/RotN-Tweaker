@@ -1,6 +1,6 @@
 {
     "parent": "block/button_inventory",
     "textures": {
-        "texture": "betternether:blocks/bone_block"
+        "texture": "rotntweaker:blocks/bone_block"
     }
 }

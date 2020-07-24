@@ -7,11 +7,11 @@
   ],
   "key": {
     "#": {
-      "item": "betternether:cincinnasite_forged"
+      "item": "rotntweaker:cincinnasite_forged"
     }
   },
   "result": {
-    "item": "betternether:cincinnasite_stairs",
+    "item": "rotntweaker:cincinnasite_stairs",
     "count": 4
   }
 }

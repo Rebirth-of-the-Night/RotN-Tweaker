@@ -8,11 +8,11 @@
   ],
   "key": {
     "#": {
-      "item": "betternether:stalagnate_planks"
+      "item": "rotntweaker:stalagnate_planks"
     }
   },
   "result": {
-    "item": "betternether:stalagnate_planks_stairs",
+    "item": "rotntweaker:stalagnate_planks_stairs",
     "count": 4
   }
 }

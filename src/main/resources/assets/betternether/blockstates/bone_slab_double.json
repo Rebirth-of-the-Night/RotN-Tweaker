@@ -1,7 +1,7 @@
 {
     "variants":
 	{
-        "half=top": { "model": "betternether:bone_double_slab" },
-        "half=bottom": { "model": "betternether:bone_double_slab" }
+        "half=top": { "model": "rotntweaker:bone_double_slab" },
+        "half=bottom": { "model": "rotntweaker:bone_double_slab" }
     }
 }

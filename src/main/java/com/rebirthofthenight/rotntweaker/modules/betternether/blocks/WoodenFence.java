@@ -4,7 +4,7 @@ import net.minecraft.block.BlockFence;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.MapColor;
 import net.minecraft.block.material.Material;
-import com.rebirthofthenight.rotntweaker.modules.betternether.BetterNether;
+import com.rebirthofthenight.rotntweaker.RotNTweaker;
 
 public class WoodenFence extends BlockFence
 {
@@ -15,6 +15,6 @@ public class WoodenFence extends BlockFence
 		this.setUnlocalizedName(name);
 		this.setSoundType(SoundType.WOOD);
 		this.setHardness(2.0F);
-		this.setCreativeTab(BetterNether.BN_TAB);
+		this.setCreativeTab(RotNTweaker.BN_TAB);
 	}
 }

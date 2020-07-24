@@ -2,8 +2,8 @@
 	"__comment": "Designed by Paulevs with Cubik Studio - https://cubik.studio",
 	"ambientocclusion": false,
 	"textures": {
-		"particle": "betternether:blocks/reeds_potted",
-		"texture": "betternether:blocks/reeds_potted"
+		"particle": "rotntweaker:blocks/reeds_potted",
+		"texture": "rotntweaker:blocks/reeds_potted"
 	},
 	"elements": [ 	 
 		{

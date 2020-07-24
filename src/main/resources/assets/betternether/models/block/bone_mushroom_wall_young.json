@@ -3,9 +3,9 @@
 	"parent": "block/block",
 	"ambientocclusion": false,
 	"textures": {
-		"particle": "betternether:blocks/bone_mushroom_pre",
-		"texture": "betternether:blocks/bone_mushroom_pre",
-		"wall": "betternether:blocks/bone_mycelium"
+		"particle": "rotntweaker:blocks/bone_mushroom_pre",
+		"texture": "rotntweaker:blocks/bone_mushroom_pre",
+		"wall": "rotntweaker:blocks/bone_mycelium"
 	},
 	"elements": [ 	 
 		{

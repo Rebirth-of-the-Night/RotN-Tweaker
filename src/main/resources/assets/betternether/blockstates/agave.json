@@ -2,10 +2,10 @@
 	"variants":
 	{
         "normal":  [
-			{ "model": "betternether:agave" },
-			{ "model": "betternether:agave", "y": 90 },
-			{ "model": "betternether:agave", "y": 180 },
-			{ "model": "betternether:agave", "y": 270 }
+			{ "model": "rotntweaker:agave" },
+			{ "model": "rotntweaker:agave", "y": 90 },
+			{ "model": "rotntweaker:agave", "y": 180 },
+			{ "model": "rotntweaker:agave", "y": 270 }
 		]
     }
 }

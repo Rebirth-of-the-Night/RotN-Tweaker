@@ -1,6 +1,6 @@
 {
     "variants":
 	{
-        "normal": { "model": "betternether:nether_brick_tile_small" }
+        "normal": { "model": "rotntweaker:nether_brick_tile_small" }
     }
 }

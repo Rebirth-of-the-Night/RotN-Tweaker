@@ -6,11 +6,11 @@
   ],
   "key": {
     "#": {
-      "item": "betternether:cincinnasite_tile_large"
+      "item": "rotntweaker:cincinnasite_tile_large"
     }
   },
   "result": {
-    "item": "betternether:cincinnasite_tile_small",
+    "item": "rotntweaker:cincinnasite_tile_small",
 	"count": 4
   }
 }

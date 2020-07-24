@@ -18,7 +18,7 @@ import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
-import com.rebirthofthenight.rotntweaker.modules.betternether.BetterNether;
+import com.rebirthofthenight.rotntweaker.RotNTweaker;
 
 public class BlockEyeSeed extends Block implements IGrowable
 {
@@ -30,7 +30,7 @@ public class BlockEyeSeed extends Block implements IGrowable
 		this.setRegistryName("eye_seed");
 		this.setUnlocalizedName("eye_seed");
 		this.setTickRandomly(true);
-		this.setCreativeTab(BetterNether.BN_TAB);
+		this.setCreativeTab(RotNTweaker.BN_TAB);
 		this.setSoundType(SoundType.PLANT);
 	}
 	

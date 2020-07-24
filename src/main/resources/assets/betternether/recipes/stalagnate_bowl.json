@@ -1,1 +1,16 @@
-{  "type": "minecraft:crafting_shaped",  "pattern": [    "# #",    " # "  ],  "key": {    "#": {      "item": "betternether:stalagnate_stem"    }  },  "result": {    "item": "betternether:stalagnate_bowl",    "count": 3  }}
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "# #",
+    " # "
+  ],
+  "key": {
+    "#": {
+      "item": "rotntweaker:stalagnate_stem"
+    }
+  },
+  "result": {
+    "item": "rotntweaker:stalagnate_bowl",
+    "count": 3
+  }
+}

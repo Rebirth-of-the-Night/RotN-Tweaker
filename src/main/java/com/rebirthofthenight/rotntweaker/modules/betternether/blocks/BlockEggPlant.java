@@ -28,7 +28,7 @@ import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
-import com.rebirthofthenight.rotntweaker.modules.betternether.BetterNether;
+import com.rebirthofthenight.rotntweaker.RotNTweaker;
 import com.rebirthofthenight.rotntweaker.modules.betternether.entities.EntityFirefly;
 import com.rebirthofthenight.rotntweaker.modules.betternether.world.BNWorldGenerator;
 
@@ -40,7 +40,7 @@ public class BlockEggPlant extends Block
 	public BlockEggPlant()
 	{
 		super(Material.PLANTS, MapColor.WHITE_STAINED_HARDENED_CLAY);
-		this.setCreativeTab(BetterNether.BN_TAB);
+		this.setCreativeTab(RotNTweaker.BN_TAB);
 		this.setHardness(1.0F);
 		this.setRegistryName("egg_plant");
 		this.setUnlocalizedName("egg_plant");

@@ -1,7 +1,7 @@
 {
     "parent": "block/ladder",
     "textures": {
-        "particle": "betternether:blocks/reeds_ladder",
-        "texture": "betternether:blocks/reeds_ladder"
+        "particle": "rotntweaker:blocks/reeds_ladder",
+        "texture": "rotntweaker:blocks/reeds_ladder"
     }
 }

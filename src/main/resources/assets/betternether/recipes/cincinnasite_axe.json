@@ -7,13 +7,13 @@
   ],
   "key": {
     "#": {
-      "item": "betternether:cincinnasite_forged"
+      "item": "rotntweaker:cincinnasite_forged"
     },
 	"S": {
-      "item": "betternether:nether_reed"
+      "item": "rotntweaker:nether_reed"
     }
   },
   "result": {
-    "item": "betternether:cincinnasite_axe"
+    "item": "rotntweaker:cincinnasite_axe"
   }
 }

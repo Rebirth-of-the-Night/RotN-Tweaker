@@ -1,11 +1,11 @@
 {
     "ambientocclusion": false,
     "textures": {
-        "cross": "betternether:blocks/eye_seed",
-		"particle": "betternether:blocks/eye_side",
-        "down": "betternether:blocks/eye_seed_bottom",
-        "up": "betternether:blocks/eye_top",
-        "side": "betternether:blocks/eye_side"
+        "cross": "rotntweaker:blocks/eye_seed",
+		"particle": "rotntweaker:blocks/eye_side",
+        "down": "rotntweaker:blocks/eye_seed_bottom",
+        "up": "rotntweaker:blocks/eye_top",
+        "side": "rotntweaker:blocks/eye_side"
     },
 	"elements": [
         {   "from": [ 6, 6, 6 ],

@@ -2,10 +2,10 @@
 	"__comment": "Designed by Paulevs with Cubik Studio - https://cubik.studio",
 	"parent": "block/block",
 	"textures": {
-		"particle": "betternether:blocks/pot_side",
-		"side": "betternether:blocks/pot_side",
-		"top": "betternether:blocks/pot_top",
-		"bottom": "betternether:blocks/cincinnasite_plate_up"
+		"particle": "rotntweaker:blocks/pot_side",
+		"side": "rotntweaker:blocks/pot_side",
+		"top": "rotntweaker:blocks/pot_top",
+		"bottom": "rotntweaker:blocks/cincinnasite_plate_up"
 	},
 	"elements": [ 	 
 		{

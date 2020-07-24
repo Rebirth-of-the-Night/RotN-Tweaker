@@ -1,6 +1,6 @@
 {
     "parent": "block/button_pressed",
     "textures": {
-        "texture": "betternether:blocks/stalagnate_planks"
+        "texture": "rotntweaker:blocks/stalagnate_planks"
     }
 }

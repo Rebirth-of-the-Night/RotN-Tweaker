@@ -26,7 +26,7 @@ import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
-import com.rebirthofthenight.rotntweaker.modules.betternether.BetterNether;
+import com.rebirthofthenight.rotntweaker.RotNTweaker;
 
 public class BlockNetherReed extends Block
 {
@@ -70,7 +70,7 @@ public class BlockNetherReed extends Block
 		this.setRegistryName("nether_reed");
 		this.setDefaultState(this.blockState.getBaseState().withProperty(SHAPE, EnumShape.TOP));
 		this.setTickRandomly(true);
-		this.setCreativeTab(BetterNether.BN_TAB);
+		this.setCreativeTab(RotNTweaker.BN_TAB);
 	}
 	
 	@Override

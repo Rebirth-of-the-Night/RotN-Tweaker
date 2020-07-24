@@ -1,12 +1,12 @@
 {
     "variants": {
-        "active=false,facing=north": { "model": "betternether:cincinnasite_forge" },
-        "active=false,facing=south": { "model": "betternether:cincinnasite_forge", "y": 180 },
-        "active=false,facing=west":  { "model": "betternether:cincinnasite_forge", "y": 270 },
-        "active=false,facing=east":  { "model": "betternether:cincinnasite_forge", "y": 90 },
-		"active=true,facing=north": { "model": "betternether:cincinnasite_forge_on" },
-        "active=true,facing=south": { "model": "betternether:cincinnasite_forge_on", "y": 180 },
-        "active=true,facing=west":  { "model": "betternether:cincinnasite_forge_on", "y": 270 },
-        "active=true,facing=east":  { "model": "betternether:cincinnasite_forge_on", "y": 90 }
+        "active=false,facing=north": { "model": "rotntweaker:cincinnasite_forge" },
+        "active=false,facing=south": { "model": "rotntweaker:cincinnasite_forge", "y": 180 },
+        "active=false,facing=west":  { "model": "rotntweaker:cincinnasite_forge", "y": 270 },
+        "active=false,facing=east":  { "model": "rotntweaker:cincinnasite_forge", "y": 90 },
+		"active=true,facing=north": { "model": "rotntweaker:cincinnasite_forge_on" },
+        "active=true,facing=south": { "model": "rotntweaker:cincinnasite_forge_on", "y": 180 },
+        "active=true,facing=west":  { "model": "rotntweaker:cincinnasite_forge_on", "y": 270 },
+        "active=true,facing=east":  { "model": "rotntweaker:cincinnasite_forge_on", "y": 90 }
     }
 }

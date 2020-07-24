@@ -19,7 +19,7 @@ import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
-import com.rebirthofthenight.rotntweaker.modules.betternether.BetterNether;
+import com.rebirthofthenight.rotntweaker.RotNTweaker;
 
 public class BlockSmoker extends Block
 {
@@ -61,7 +61,7 @@ public class BlockSmoker extends Block
 	public BlockSmoker()
 	{
 		super(Material.WOOD, MapColor.BROWN);
-		this.setCreativeTab(BetterNether.BN_TAB);
+		this.setCreativeTab(RotNTweaker.BN_TAB);
 		this.setHardness(2.0F);
 		this.setRegistryName("smoker");
 		this.setUnlocalizedName("smoker");

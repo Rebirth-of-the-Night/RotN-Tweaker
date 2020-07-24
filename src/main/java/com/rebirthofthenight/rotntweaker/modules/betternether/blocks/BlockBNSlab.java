@@ -14,7 +14,7 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
-import com.rebirthofthenight.rotntweaker.modules.betternether.BetterNether;
+import com.rebirthofthenight.rotntweaker.RotNTweaker;
 
 public abstract class BlockBNSlab extends BlockSlab
 {
@@ -25,7 +25,7 @@ public abstract class BlockBNSlab extends BlockSlab
 		super(material, color);
 		this.setSoundType(sound);
 		this.setHardness(2.0F);
-		this.setCreativeTab(BetterNether.BN_TAB);
+		this.setCreativeTab(RotNTweaker.BN_TAB);
 		this.setUnlocalizedName(name);
 		this.setRegistryName(name);
 		IBlockState state = this.blockState.getBaseState();

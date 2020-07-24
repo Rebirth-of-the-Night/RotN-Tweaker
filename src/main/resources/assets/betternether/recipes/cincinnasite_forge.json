@@ -7,13 +7,13 @@
   ],
   "key": {
     "#": {
-      "item": "betternether:cincinnasite_forged"
+      "item": "rotntweaker:cincinnasite_forged"
     },
 	"B": {
       "item": "minecraft:nether_brick"
     }
   },
   "result": {
-    "item": "betternether:cincinnasite_forge"
+    "item": "rotntweaker:cincinnasite_forge"
   }
 }

@@ -2,9 +2,9 @@
     "variants":
 	{
         "normal": [
-			{ "model": "betternether:nether_grass_1" },
-			{ "model": "betternether:nether_grass_2" },
-			{ "model": "betternether:nether_grass_3" }
+			{ "model": "rotntweaker:nether_grass_1" },
+			{ "model": "rotntweaker:nether_grass_2" },
+			{ "model": "rotntweaker:nether_grass_3" }
 		]
     }
 }

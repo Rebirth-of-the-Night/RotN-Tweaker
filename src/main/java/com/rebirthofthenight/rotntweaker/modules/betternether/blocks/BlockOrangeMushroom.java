@@ -20,7 +20,7 @@ import net.minecraft.util.math.AxisAlignedBB;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
-import com.rebirthofthenight.rotntweaker.modules.betternether.BetterNether;
+import com.rebirthofthenight.rotntweaker.RotNTweaker;
 
 public class BlockOrangeMushroom extends Block implements IGrowable
 {
@@ -36,7 +36,7 @@ public class BlockOrangeMushroom extends Block implements IGrowable
 	public BlockOrangeMushroom()
 	{
 		super(Material.PLANTS, MapColor.ORANGE_STAINED_HARDENED_CLAY);
-		this.setCreativeTab(BetterNether.BN_TAB);
+		this.setCreativeTab(RotNTweaker.BN_TAB);
 		this.setHardness(0.5F);
 		this.setSoundType(SoundType.WOOD);
 		this.setRegistryName("orange_mushroom");

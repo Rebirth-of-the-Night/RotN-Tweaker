@@ -1,6 +1,6 @@
 {
-    "parent": "betternether:block/bone_wall_ns",
+    "parent": "rotntweaker:block/bone_wall_ns",
     "textures": {
-        "top": "betternether:blocks/bone_wall_top_ew"
+        "top": "rotntweaker:blocks/bone_wall_top_ew"
     }
 }

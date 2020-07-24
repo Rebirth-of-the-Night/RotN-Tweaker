@@ -7,13 +7,13 @@
   ],
   "key": {
     "C": {
-      "item": "betternether:cincinnasite_forged"
+      "item": "rotntweaker:cincinnasite_forged"
     },
 	"#": {
-      "item": "betternether:reeds_block"
+      "item": "rotntweaker:reeds_block"
     }
   },
   "result": {
-    "item": "betternether:chest_of_drawers"
+    "item": "rotntweaker:chest_of_drawers"
   }
 }

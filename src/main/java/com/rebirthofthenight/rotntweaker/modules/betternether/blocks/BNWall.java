@@ -23,7 +23,7 @@ import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
-import com.rebirthofthenight.rotntweaker.modules.betternether.BetterNether;
+import com.rebirthofthenight.rotntweaker.RotNTweaker;
 
 public class BNWall extends Block
 {
@@ -42,7 +42,7 @@ public class BNWall extends Block
 		this.setHardness(1.0F);
 		this.setResistance(1.0F);
 		this.setSoundType(sound);
-		this.setCreativeTab(BetterNether.BN_TAB);
+		this.setCreativeTab(RotNTweaker.BN_TAB);
 		this.setRegistryName(name);
 		this.setUnlocalizedName(name);
 	}

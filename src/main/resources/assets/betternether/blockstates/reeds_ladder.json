@@ -1,8 +1,8 @@
 {
     "variants": {
-        "facing=north": { "model": "betternether:reeds_ladder" },
-        "facing=east":  { "model": "betternether:reeds_ladder", "y": 90 },
-        "facing=south": { "model": "betternether:reeds_ladder", "y": 180 },
-        "facing=west":  { "model": "betternether:reeds_ladder", "y": 270 }
+        "facing=north": { "model": "rotntweaker:reeds_ladder" },
+        "facing=east":  { "model": "rotntweaker:reeds_ladder", "y": 90 },
+        "facing=south": { "model": "rotntweaker:reeds_ladder", "y": 180 },
+        "facing=west":  { "model": "rotntweaker:reeds_ladder", "y": 270 }
     }
 }

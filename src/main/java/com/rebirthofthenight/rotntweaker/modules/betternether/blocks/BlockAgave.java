@@ -19,7 +19,7 @@ import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
-import com.rebirthofthenight.rotntweaker.modules.betternether.BetterNether;
+import com.rebirthofthenight.rotntweaker.RotNTweaker;
 
 public class BlockAgave extends Block
 {
@@ -28,7 +28,7 @@ public class BlockAgave extends Block
 	public BlockAgave()
 	{
 		super(Material.CACTUS, MapColor.ORANGE_STAINED_HARDENED_CLAY);
-		this.setCreativeTab(BetterNether.BN_TAB);
+		this.setCreativeTab(RotNTweaker.BN_TAB);
 		this.setRegistryName("agave");
 		this.setUnlocalizedName("agave");
 		this.setTickRandomly(true);

@@ -2,7 +2,7 @@
 	"variants":
 	{
         "normal":  [
-			{ "model": "betternether:bone_tile" }
+			{ "model": "rotntweaker:bone_tile" }
 		]
     }
 }

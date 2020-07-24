@@ -7,14 +7,14 @@
   ],
   "key": {
     "A": {
-		"item": "betternether:cincinnasite_forged"
+		"item": "rotntweaker:cincinnasite_forged"
     },
 	"B": {
-      "item": "betternether:bone_block"
+      "item": "rotntweaker:bone_block"
     }
   },
   "result": {
-    "item": "betternether:bone_cincinnasite_door",
+    "item": "rotntweaker:bone_cincinnasite_door",
 	"count": 3
   }
 }

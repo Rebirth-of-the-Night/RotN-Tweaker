@@ -7,11 +7,11 @@
   ],
   "key": {
     "#": {
-      "item": "betternether:reeds_block"
+      "item": "rotntweaker:reeds_block"
     }
   },
   "result": {
-    "item": "betternether:reeds_stairs",
+    "item": "rotntweaker:reeds_stairs",
     "count": 4
   }
 }

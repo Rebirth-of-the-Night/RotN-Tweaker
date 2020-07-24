@@ -2,8 +2,8 @@
 	"__comment": "Designed by Paulevs with Cubik Studio - https://cubik.studio",
 	"parent": "block/block",
 	"textures": {
-		"particle": "betternether:blocks/red_mushroom_stem",
-		"texture": "betternether:blocks/red_mushroom_stem"
+		"particle": "rotntweaker:blocks/red_mushroom_stem",
+		"texture": "rotntweaker:blocks/red_mushroom_stem"
 	},
 	"elements": [ 	 
 		{

@@ -7,7 +7,7 @@
   ],
   "key": {
     "#": {
-      "item": "betternether:stalagnate_planks"
+      "item": "rotntweaker:stalagnate_planks"
     },
 	"S": {
       "item": "minecraft:stick",
@@ -15,7 +15,7 @@
     }
   },
   "result": {
-    "item": "betternether:stalagnate_planks_fence",
+    "item": "rotntweaker:stalagnate_planks_fence",
     "count": 4
   }
 }

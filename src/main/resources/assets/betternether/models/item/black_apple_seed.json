@@ -1,6 +1,6 @@
 {
 	"parent": "item/generated",
     "textures": {
-        "layer0": "betternether:items/black_apple_seed"
+        "layer0": "rotntweaker:items/black_apple_seed"
     }
 }

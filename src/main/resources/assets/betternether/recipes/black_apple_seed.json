@@ -5,11 +5,11 @@
   ],
   "key": {
     "#": {
-      "item": "betternether:black_apple"
+      "item": "rotntweaker:black_apple"
     }
   },
   "result": {
-    "item": "betternether:black_apple_seed",
+    "item": "rotntweaker:black_apple_seed",
 	"count": 4
   }
 }

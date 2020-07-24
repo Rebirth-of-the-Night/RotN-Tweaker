@@ -1,8 +1,8 @@
 {
 	"__comment": "Designed by Paulevs with Cubik Studio - https://cubik.studio",
 	"textures": {
-		"particle": "betternether:blocks/cincinnasite_tiles_small",
-		"texture": "betternether:blocks/cincinnasite_tiles_small"
+		"particle": "rotntweaker:blocks/cincinnasite_tiles_small",
+		"texture": "rotntweaker:blocks/cincinnasite_tiles_small"
 	},
 	"elements": [ 	 
 		{

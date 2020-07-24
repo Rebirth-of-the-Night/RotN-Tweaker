@@ -7,11 +7,11 @@
   ],
   "key": {
     "#": {
-      "item": "betternether:nether_brick_tile_small"
+      "item": "rotntweaker:nether_brick_tile_small"
     }
   },
   "result": {
-    "item": "betternether:nether_brick_tile_stairs",
+    "item": "rotntweaker:nether_brick_tile_stairs",
 	"count": 4
   }
 }

@@ -6,7 +6,7 @@ import net.minecraftforge.fml.common.registry.ForgeRegistries;
 
 public class SoundRegister
 {
-	public static final SoundEvent FLY_SOUND = new SoundEvent(new ResourceLocation("betternether", "mob.firefly.fly")).setRegistryName("bn_fly");
+	public static final SoundEvent FLY_SOUND = new SoundEvent(new ResourceLocation("rotntweaker", "mob.firefly.fly")).setRegistryName("bn_fly");
 	
 	public static void register()
 	{

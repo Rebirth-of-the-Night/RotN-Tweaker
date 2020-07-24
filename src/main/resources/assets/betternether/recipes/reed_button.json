@@ -5,10 +5,10 @@
   ],
   "key": {
     "#": {
-      "item": "betternether:reeds_block"
+      "item": "rotntweaker:reeds_block"
     }
   },
   "result": {
-    "item": "betternether:reeds_button"
+    "item": "rotntweaker:reeds_button"
   }
 }

@@ -1,12 +1,12 @@
 {
     "parent": "block/cube",
     "textures": {
-        "particle": "betternether:blocks/eye_side",
-        "down": "betternether:blocks/eye_bottom",
-        "up": "betternether:blocks/eye_top",
-        "north": "betternether:blocks/eye_side",
-        "east": "betternether:blocks/eye_side",
-        "south": "betternether:blocks/eye_side",
-        "west": "betternether:blocks/eye_side"
+        "particle": "rotntweaker:blocks/eye_side",
+        "down": "rotntweaker:blocks/eye_bottom",
+        "up": "rotntweaker:blocks/eye_top",
+        "north": "rotntweaker:blocks/eye_side",
+        "east": "rotntweaker:blocks/eye_side",
+        "south": "rotntweaker:blocks/eye_side",
+        "west": "rotntweaker:blocks/eye_side"
     }
 }

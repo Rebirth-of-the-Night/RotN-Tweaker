@@ -1,6 +1,6 @@
 {
     "parent": "block/cube_all",
     "textures": {
-        "all": "betternether:blocks/cincinnasite_panel"
+        "all": "rotntweaker:blocks/cincinnasite_panel"
     }
 }

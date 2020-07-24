@@ -5,10 +5,10 @@
   ],
   "key": {
     "#": {
-      "item": "betternether:bone_block"
+      "item": "rotntweaker:bone_block"
     }
   },
   "result": {
-    "item": "betternether:bone_button"
+    "item": "rotntweaker:bone_button"
   }
 }

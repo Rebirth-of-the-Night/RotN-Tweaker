@@ -10,11 +10,11 @@
 	  "data": 32767
     },
 	"P": {
-      "item": "betternether:cincinnasite_axe",
+      "item": "rotntweaker:cincinnasite_axe",
 	  "data": 0
     }
   },
   "result": {
-    "item": "betternether:cincinnasite_axe_diamond"
+    "item": "rotntweaker:cincinnasite_axe_diamond"
   }
 }

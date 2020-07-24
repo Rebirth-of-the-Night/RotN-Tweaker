@@ -1,12 +1,12 @@
 {
     "parent": "block/cube",
     "textures": {
-        "particle": "betternether:blocks/nether_moss_side",
+        "particle": "rotntweaker:blocks/nether_moss_side",
         "down": "blocks/netherrack",
-        "up": "betternether:blocks/nether_moss_top",
-        "north": "betternether:blocks/nether_moss_side",
-        "east": "betternether:blocks/nether_moss_side",
-        "south": "betternether:blocks/nether_moss_side",
-        "west": "betternether:blocks/nether_moss_side"
+        "up": "rotntweaker:blocks/nether_moss_top",
+        "north": "rotntweaker:blocks/nether_moss_side",
+        "east": "rotntweaker:blocks/nether_moss_side",
+        "south": "rotntweaker:blocks/nether_moss_side",
+        "west": "rotntweaker:blocks/nether_moss_side"
     }
 }

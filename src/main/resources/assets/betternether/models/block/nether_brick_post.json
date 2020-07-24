@@ -2,8 +2,8 @@
 	"__comment": "Designed by Paulevs with Cubik Studio - https://cubik.studio",
 	"parent": "block/block",
 	"textures": {
-		"particle": "betternether:blocks/nether_brick_post",
-		"texture": "betternether:blocks/nether_brick_post"
+		"particle": "rotntweaker:blocks/nether_brick_post",
+		"texture": "rotntweaker:blocks/nether_brick_post"
 	},
 	"elements": [ 	 
 		{

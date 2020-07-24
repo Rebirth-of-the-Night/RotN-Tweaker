@@ -2,10 +2,10 @@
 	"forge_marker": 1,
 	"defaults": {
 		"textures": {
-			"edge": "betternether:blocks/quartz_glass",
-			"pane": "betternether:blocks/quartz_glass"
+			"edge": "rotntweaker:blocks/quartz_glass",
+			"pane": "rotntweaker:blocks/quartz_glass"
 		},
-		"model": "betternether:quartz_glass_pane_post",
+		"model": "rotntweaker:quartz_glass_pane_post",
 		"uvlock": true
 	},
   "variants": {
@@ -13,14 +13,14 @@
       "true": {
         "submodel": {
           "nside": {
-            "model": "betternether:quartz_glass_pane_side"
+            "model": "rotntweaker:quartz_glass_pane_side"
           }
         }
       },
       "false": {
         "submodel": {
           "nsidens": {
-            "model": "betternether:quartz_glass_pane_noside"
+            "model": "rotntweaker:quartz_glass_pane_noside"
           }
         }
       }
@@ -29,14 +29,14 @@
       "true": {
         "submodel": {
           "sside": {
-            "model": "betternether:quartz_glass_pane_side_alt"
+            "model": "rotntweaker:quartz_glass_pane_side_alt"
           }
         }
       },
       "false": {
         "submodel": {
           "ssidens": {
-            "model": "betternether:quartz_glass_pane_noside_alt",
+            "model": "rotntweaker:quartz_glass_pane_noside_alt",
             "y": 90
           }
         }
@@ -46,7 +46,7 @@
       "true": {
         "submodel": {
           "eside": {
-            "model": "betternether:quartz_glass_pane_side",
+            "model": "rotntweaker:quartz_glass_pane_side",
             "y": 90
           }
         }
@@ -54,7 +54,7 @@
       "false": {
         "submodel": {
           "esidens": {
-            "model": "betternether:quartz_glass_pane_noside_alt"
+            "model": "rotntweaker:quartz_glass_pane_noside_alt"
           }
         }
       }
@@ -63,7 +63,7 @@
       "true": {
         "submodel": {
           "wside": {
-            "model": "betternether:quartz_glass_pane_side_alt",
+            "model": "rotntweaker:quartz_glass_pane_side_alt",
             "y": 90
           }
         }
@@ -71,27 +71,27 @@
       "false": {
         "submodel": {
           "wsidens": {
-            "model": "betternether:quartz_glass_pane_noside",
+            "model": "rotntweaker:quartz_glass_pane_noside",
             "y": 270
           }
         }
       }
     }],
-	"color=black": [{ "textures": { "pane": "betternether:blocks/quartz_stained_glass_black" } }],
-	"color=blue": [{ "textures": { "pane": "betternether:blocks/quartz_stained_glass_blue" } }],
-	"color=brown": [{ "textures": { "pane": "betternether:blocks/quartz_stained_glass_brown" } }],
-	"color=cyan": [{ "textures": { "pane": "betternether:blocks/quartz_stained_glass_cyan" } }],
-	"color=gray": [{ "textures": { "pane": "betternether:blocks/quartz_stained_glass_gray" } }],
-	"color=green": [{ "textures": { "pane": "betternether:blocks/quartz_stained_glass_green" } }],
-	"color=light_blue": [{ "textures": { "pane": "betternether:blocks/quartz_stained_glass_light_blue" } }],
-	"color=lime": [{ "textures": { "pane": "betternether:blocks/quartz_stained_glass_lime" } }],
-	"color=magenta": [{ "textures": { "pane": "betternether:blocks/quartz_stained_glass_magenta" } }],
-	"color=orange": [{ "textures": { "pane": "betternether:blocks/quartz_stained_glass_orange" } }],
-	"color=pink": [{ "textures": { "pane": "betternether:blocks/quartz_stained_glass_pink" } }],
-	"color=purple": [{ "textures": { "pane": "betternether:blocks/quartz_stained_glass_purple" } }],
-	"color=red": [{ "textures": { "pane": "betternether:blocks/quartz_stained_glass_red" } }],
-	"color=silver": [{ "textures": { "pane": "betternether:blocks/quartz_stained_glass_silver" } }],
-	"color=white": [{ "textures": { "pane": "betternether:blocks/quartz_stained_glass_white" } }],
-	"color=yellow": [{ "textures": { "pane": "betternether:blocks/quartz_stained_glass_yellow" } }]
+	"color=black": [{ "textures": { "pane": "rotntweaker:blocks/quartz_stained_glass_black" } }],
+	"color=blue": [{ "textures": { "pane": "rotntweaker:blocks/quartz_stained_glass_blue" } }],
+	"color=brown": [{ "textures": { "pane": "rotntweaker:blocks/quartz_stained_glass_brown" } }],
+	"color=cyan": [{ "textures": { "pane": "rotntweaker:blocks/quartz_stained_glass_cyan" } }],
+	"color=gray": [{ "textures": { "pane": "rotntweaker:blocks/quartz_stained_glass_gray" } }],
+	"color=green": [{ "textures": { "pane": "rotntweaker:blocks/quartz_stained_glass_green" } }],
+	"color=light_blue": [{ "textures": { "pane": "rotntweaker:blocks/quartz_stained_glass_light_blue" } }],
+	"color=lime": [{ "textures": { "pane": "rotntweaker:blocks/quartz_stained_glass_lime" } }],
+	"color=magenta": [{ "textures": { "pane": "rotntweaker:blocks/quartz_stained_glass_magenta" } }],
+	"color=orange": [{ "textures": { "pane": "rotntweaker:blocks/quartz_stained_glass_orange" } }],
+	"color=pink": [{ "textures": { "pane": "rotntweaker:blocks/quartz_stained_glass_pink" } }],
+	"color=purple": [{ "textures": { "pane": "rotntweaker:blocks/quartz_stained_glass_purple" } }],
+	"color=red": [{ "textures": { "pane": "rotntweaker:blocks/quartz_stained_glass_red" } }],
+	"color=silver": [{ "textures": { "pane": "rotntweaker:blocks/quartz_stained_glass_silver" } }],
+	"color=white": [{ "textures": { "pane": "rotntweaker:blocks/quartz_stained_glass_white" } }],
+	"color=yellow": [{ "textures": { "pane": "rotntweaker:blocks/quartz_stained_glass_yellow" } }]
   }
 }

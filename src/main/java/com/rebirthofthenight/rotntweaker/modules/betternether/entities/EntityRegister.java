@@ -5,7 +5,7 @@ import net.minecraft.entity.EnumCreatureType;
 import net.minecraft.init.Biomes;
 import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.fml.common.registry.EntityRegistry;
-import com.rebirthofthenight.rotntweaker.modules.betternether.BetterNether;
+import com.rebirthofthenight.rotntweaker.RotNTweaker;
 
 public class EntityRegister
 {
@@ -20,11 +20,11 @@ public class EntityRegister
 	private static void RegisterEntity(String name, Class<? extends Entity> entityClass)
 	{
 		EntityRegistry.registerModEntity(
-				new ResourceLocation("betternether", name),
+				new ResourceLocation("rotntweaker", name),
 				entityClass,
 				name,
 				id++,
-				BetterNether.getMod(),
+				RotNTweaker.getMod(),
 				128,
 				2,
 				true,

@@ -8,7 +8,7 @@ import net.minecraft.util.EnumFacing;
 import net.minecraft.util.math.AxisAlignedBB;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.IBlockAccess;
-import com.rebirthofthenight.rotntweaker.modules.betternether.BetterNether;
+import com.rebirthofthenight.rotntweaker.RotNTweaker;
 
 public class BlockChestOfDrawers extends BlockInventoryUniversal
 {
@@ -25,7 +25,7 @@ public class BlockChestOfDrawers extends BlockInventoryUniversal
 		this.setSoundType(SoundType.METAL);
 		this.setUnlocalizedName("chest_of_drawers");
 		this.setRegistryName("chest_of_drawers");
-		this.setCreativeTab(BetterNether.BN_TAB);
+		this.setCreativeTab(RotNTweaker.BN_TAB);
 	}
 	
 	@Override

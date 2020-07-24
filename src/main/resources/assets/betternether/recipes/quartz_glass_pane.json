@@ -6,12 +6,12 @@
   ],
   "key": {
     "#": {
-      "item": "betternether:quartz_glass",
+      "item": "rotntweaker:quartz_glass",
 	  "data": 32767
     }
   },
   "result": {
-    "item": "betternether:quartz_glass_pane",
+    "item": "rotntweaker:quartz_glass_pane",
 	"count": 16
   }
 }

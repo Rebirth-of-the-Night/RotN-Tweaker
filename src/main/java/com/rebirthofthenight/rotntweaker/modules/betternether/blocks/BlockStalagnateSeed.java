@@ -21,7 +21,7 @@ import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
-import com.rebirthofthenight.rotntweaker.modules.betternether.BetterNether;
+import com.rebirthofthenight.rotntweaker.RotNTweaker;
 
 public class BlockStalagnateSeed extends Block implements IGrowable
 {
@@ -34,7 +34,7 @@ public class BlockStalagnateSeed extends Block implements IGrowable
 		this.setSoundType(SoundType.PLANT);
 		this.setRegistryName("stalagnate_seed");
 		this.setUnlocalizedName("stalagnate_seed");
-		this.setCreativeTab(BetterNether.BN_TAB);
+		this.setCreativeTab(RotNTweaker.BN_TAB);
 	}
 	
 	@Override

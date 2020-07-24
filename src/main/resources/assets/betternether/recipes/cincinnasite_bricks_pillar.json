@@ -6,11 +6,11 @@
   ],
   "key": {
     "#": {
-      "item": "betternether:cincinnasite_bricks"
+      "item": "rotntweaker:cincinnasite_bricks"
     }
   },
   "result": {
-    "item": "betternether:cincinnasite_bricks_pillar",
+    "item": "rotntweaker:cincinnasite_bricks_pillar",
     "count": 2
   }
 }

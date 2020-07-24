@@ -5,10 +5,10 @@
   ],
   "key": {
     "#": {
-      "item": "betternether:cincinnasite_forged"
+      "item": "rotntweaker:cincinnasite_forged"
     }
   },
   "result": {
-    "item": "betternether:cincinnasite_button"
+    "item": "rotntweaker:cincinnasite_button"
   }
 }

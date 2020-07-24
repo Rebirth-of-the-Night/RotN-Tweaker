@@ -1,6 +1,6 @@
 {
     "parent": "block/wheat_stage7",
 	"textures": {
-        "crop": "betternether:blocks/stalagnate_trunk_leaves_2"
+        "crop": "rotntweaker:blocks/stalagnate_trunk_leaves_2"
     }
 }

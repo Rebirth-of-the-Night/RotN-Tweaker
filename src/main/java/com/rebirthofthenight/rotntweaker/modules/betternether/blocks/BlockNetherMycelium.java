@@ -9,7 +9,7 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
-import com.rebirthofthenight.rotntweaker.modules.betternether.BetterNether;
+import com.rebirthofthenight.rotntweaker.RotNTweaker;
 
 public class BlockNetherMycelium extends BlockNetherrack
 {
@@ -17,7 +17,7 @@ public class BlockNetherMycelium extends BlockNetherrack
 	{
 		this.setRegistryName("nether_mycelium");
 		this.setUnlocalizedName("nether_mycelium");
-		this.setCreativeTab(BetterNether.BN_TAB);
+		this.setCreativeTab(RotNTweaker.BN_TAB);
 		this.setHardness(0.5F);
 	}
 	

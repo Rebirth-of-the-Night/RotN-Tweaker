@@ -2,10 +2,10 @@
 	"variants":
 	{
         "normal":  [
-			{ "model": "betternether:barrel_cactus" },
-			{ "model": "betternether:barrel_cactus", "y": 90 },
-			{ "model": "betternether:barrel_cactus", "y": 180 },
-			{ "model": "betternether:barrel_cactus", "y": 270 }
+			{ "model": "rotntweaker:barrel_cactus" },
+			{ "model": "rotntweaker:barrel_cactus", "y": 90 },
+			{ "model": "rotntweaker:barrel_cactus", "y": 180 },
+			{ "model": "rotntweaker:barrel_cactus", "y": 270 }
 		]
     }
 }

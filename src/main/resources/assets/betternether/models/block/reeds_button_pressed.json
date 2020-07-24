@@ -1,6 +1,6 @@
 {
     "parent": "block/button_pressed",
     "textures": {
-        "texture": "betternether:blocks/reeds_block_side"
+        "texture": "rotntweaker:blocks/reeds_block_side"
     }
 }

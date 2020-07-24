@@ -2,9 +2,9 @@
 	"__comment": "Designed by Paulevs with Cubik Studio - https://cubik.studio",
 	"parent": "block/block",
 	"textures": {
-		"particle": "betternether:blocks/glowmushroom_side_top",
-		"top": "betternether:blocks/glowmushroom_spore_top",
-		"bottom": "betternether:blocks/glowmushroom_spore_bottom"
+		"particle": "rotntweaker:blocks/glowmushroom_side_top",
+		"top": "rotntweaker:blocks/glowmushroom_spore_top",
+		"bottom": "rotntweaker:blocks/glowmushroom_spore_bottom"
 	},
 	"elements": [ 	 
 		{

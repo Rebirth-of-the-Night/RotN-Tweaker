@@ -3,8 +3,8 @@
 	{
         "normal":
 		[
-			{ "model": "betternether:stalagnate_stem_1" },
-			{ "model": "betternether:stalagnate_stem_3" }
+			{ "model": "rotntweaker:stalagnate_stem_1" },
+			{ "model": "rotntweaker:stalagnate_stem_3" }
 		]
     }
 }

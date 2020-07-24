@@ -14,7 +14,7 @@ import net.minecraft.util.NonNullList;
 import net.minecraft.util.math.AxisAlignedBB;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.IBlockAccess;
-import com.rebirthofthenight.rotntweaker.modules.betternether.BetterNether;
+import com.rebirthofthenight.rotntweaker.RotNTweaker;
 
 public class BlockNetherGrass extends BlockBush implements net.minecraftforge.common.IShearable
 {
@@ -25,7 +25,7 @@ public class BlockNetherGrass extends BlockBush implements net.minecraftforge.co
 		super();
 		this.setRegistryName("nether_grass");
 		this.setUnlocalizedName("nether_grass");
-		this.setCreativeTab(BetterNether.BN_TAB);
+		this.setCreativeTab(RotNTweaker.BN_TAB);
 		this.setSoundType(SoundType.PLANT);
 	}
 	

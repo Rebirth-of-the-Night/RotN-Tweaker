@@ -33,8 +33,8 @@ public class StructureNBT
 	
 	public StructureNBT(String structure)
 	{
-		location = new ResourceLocation("betternether", structure);
-		template = readTemplateFromJar(new ResourceLocation("betternether", structure));
+		location = new ResourceLocation("rotntweaker", structure);
+		template = readTemplateFromJar(new ResourceLocation("rotntweaker", structure));
 	}
 	
 	protected StructureNBT(ResourceLocation location, Template template)

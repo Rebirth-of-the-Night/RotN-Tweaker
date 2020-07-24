@@ -2,11 +2,11 @@
 	"__comment": "Designed by Paulevs with Cubik Studio - https://cubik.studio",
 	"parent": "block/block",
 	"textures": {
-		"particle": "betternether:blocks/pig_statue_1",
-		"texture": "betternether:blocks/pig_statue_1",
-		"bowl": "betternether:blocks/pig_statue_1_bowl",
-		"body": "betternether:blocks/pig_statue_1_body",
-		"flame": "betternether:blocks/fire_small"
+		"particle": "rotntweaker:blocks/pig_statue_1",
+		"texture": "rotntweaker:blocks/pig_statue_1",
+		"bowl": "rotntweaker:blocks/pig_statue_1_bowl",
+		"body": "rotntweaker:blocks/pig_statue_1_body",
+		"flame": "rotntweaker:blocks/fire_small"
 	},
 	"elements": [ 	 
 		{

@@ -2,11 +2,11 @@
 	"__comment": "Designed by Paulevs with Cubik Studio - https://cubik.studio",
 	"parent": "block/block",
 	"textures": {
-		"particle": "betternether:blocks/cactus_middle_side",
-		"side": "betternether:blocks/cactus_middle_side",
-		"top_bottom": "betternether:blocks/cactus_top_bottom",
-		"top_top": "betternether:blocks/cactus_top_top",
-		"top_side": "betternether:blocks/cactus_top_side"
+		"particle": "rotntweaker:blocks/cactus_middle_side",
+		"side": "rotntweaker:blocks/cactus_middle_side",
+		"top_bottom": "rotntweaker:blocks/cactus_top_bottom",
+		"top_top": "rotntweaker:blocks/cactus_top_top",
+		"top_side": "rotntweaker:blocks/cactus_top_side"
 	},
 	"elements": [ 	 
 		{

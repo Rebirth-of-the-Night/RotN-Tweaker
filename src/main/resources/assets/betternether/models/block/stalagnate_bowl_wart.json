@@ -1,9 +1,9 @@
 {
 	"__comment": "Designed by Paulevs with Cubik Studio - https://cubik.studio",
 	"textures": {
-		"particle": "betternether:blocks/stalagnate_trunk_middle",
-		"side": "betternether:blocks/stalagnate_trunk_middle",
-		"top": "betternether:blocks/stalagnate_top",
+		"particle": "rotntweaker:blocks/stalagnate_trunk_middle",
+		"side": "rotntweaker:blocks/stalagnate_trunk_middle",
+		"top": "rotntweaker:blocks/stalagnate_top",
 		"wart": "items/nether_wart",
 		"wart_block": "blocks/nether_wart_block"
 	},

@@ -7,7 +7,7 @@ import net.minecraft.block.SoundType;
 import net.minecraft.block.material.MapColor;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.item.Item;
-import com.rebirthofthenight.rotntweaker.modules.betternether.BetterNether;
+import com.rebirthofthenight.rotntweaker.RotNTweaker;
 import com.rebirthofthenight.rotntweaker.modules.betternether.items.ItemsRegister;
 
 public class BlockCincinnasitOre extends BlockOre
@@ -20,7 +20,7 @@ public class BlockCincinnasitOre extends BlockOre
 		this.setSoundType(SoundType.STONE);
 		this.setUnlocalizedName("cincinnasite_ore");
 		this.setRegistryName("cincinnasite_ore");
-		this.setCreativeTab(BetterNether.BN_TAB);
+		this.setCreativeTab(RotNTweaker.BN_TAB);
 	}
 	
 	@Override

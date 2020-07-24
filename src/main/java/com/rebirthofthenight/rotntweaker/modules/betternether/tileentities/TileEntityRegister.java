@@ -15,6 +15,6 @@ public class TileEntityRegister
 	
 	private static void registerTE(String name, Class<? extends TileEntity> te)
 	{
-		GameRegistry.registerTileEntity(te, new ResourceLocation("betternether", name));
+		GameRegistry.registerTileEntity(te, new ResourceLocation("rotntweaker", name));
 	}
 }

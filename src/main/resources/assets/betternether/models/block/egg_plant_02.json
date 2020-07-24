@@ -2,9 +2,9 @@
 	"__comment": "Designed by Paulevs with Cubik Studio - https://cubik.studio",
 	"parent": "block/block",
 	"textures": {
-		"particle": "betternether:blocks/egg_plant",
-		"texture": "betternether:blocks/egg_plant",
-		"vine": "betternether:blocks/egg_plant_vine"
+		"particle": "rotntweaker:blocks/egg_plant",
+		"texture": "rotntweaker:blocks/egg_plant",
+		"vine": "rotntweaker:blocks/egg_plant_vine"
 	},
 	"elements": [ 	 
 		{

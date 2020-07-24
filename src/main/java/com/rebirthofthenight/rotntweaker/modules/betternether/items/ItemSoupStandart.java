@@ -4,7 +4,7 @@ import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.item.ItemSoup;
 import net.minecraft.item.ItemStack;
 import net.minecraft.world.World;
-import com.rebirthofthenight.rotntweaker.modules.betternether.BetterNether;
+import com.rebirthofthenight.rotntweaker.RotNTweaker;
 
 public class ItemSoupStandart extends ItemSoup
 {
@@ -13,7 +13,7 @@ public class ItemSoupStandart extends ItemSoup
 		super(amount);
 		this.setRegistryName(name);
 		this.setUnlocalizedName(name);
-		this.setCreativeTab(BetterNether.BN_TAB);
+		this.setCreativeTab(RotNTweaker.BN_TAB);
 	}
 	
 	@Override

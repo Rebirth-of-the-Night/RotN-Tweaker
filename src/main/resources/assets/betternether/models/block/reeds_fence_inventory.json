@@ -1,6 +1,6 @@
 {
     "parent": "block/fence_inventory",
     "textures": {
-        "texture": "betternether:blocks/reeds_block_side"
+        "texture": "rotntweaker:blocks/reeds_block_side"
     }
 }

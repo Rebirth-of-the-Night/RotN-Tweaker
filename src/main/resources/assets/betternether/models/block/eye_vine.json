@@ -1,6 +1,6 @@
 {
     "parent": "block/cross",
     "textures": {
-        "cross": "betternether:blocks/eye_vine"
+        "cross": "rotntweaker:blocks/eye_vine"
     }
 }

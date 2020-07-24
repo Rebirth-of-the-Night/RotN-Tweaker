@@ -1,7 +1,7 @@
 {
     "variants": {
-        "axis=y": { "model": "betternether:cincinnasite_bricks_pillar" },
-        "axis=z": { "model": "betternether:cincinnasite_bricks_pillar", "x": 90 },
-        "axis=x": { "model": "betternether:cincinnasite_bricks_pillar", "x": 90, "y": 90 }
+        "axis=y": { "model": "rotntweaker:cincinnasite_bricks_pillar" },
+        "axis=z": { "model": "rotntweaker:cincinnasite_bricks_pillar", "x": 90 },
+        "axis=x": { "model": "rotntweaker:cincinnasite_bricks_pillar", "x": 90, "y": 90 }
     }
 }

@@ -1,1 +1,18 @@
-{  "type": "minecraft:crafting_shaped",  "pattern": [    "WWW",    " # "  ],  "key": {    "#": {      "item": "betternether:stalagnate_bowl"    },	"W": {      "item": "minecraft:nether_wart"    }  },  "result": {    "item": "betternether:stalagnate_bowl_wart"  }}
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "WWW",
+    " # "
+  ],
+  "key": {
+    "#": {
+      "item": "rotntweaker:stalagnate_bowl"
+    },
+	"W": {
+      "item": "minecraft:nether_wart"
+    }
+  },
+  "result": {
+    "item": "rotntweaker:stalagnate_bowl_wart"
+  }
+}

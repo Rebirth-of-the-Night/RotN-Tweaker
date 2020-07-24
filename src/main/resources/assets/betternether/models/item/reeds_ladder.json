@@ -1,6 +1,6 @@
 {
 	"parent": "item/generated",
     "textures": {
-        "layer0": "betternether:blocks/reeds_ladder"
+        "layer0": "rotntweaker:blocks/reeds_ladder"
     }
 }

@@ -14,14 +14,14 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.IBlockAccess;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
-import com.rebirthofthenight.rotntweaker.modules.betternether.BetterNether;
+import com.rebirthofthenight.rotntweaker.RotNTweaker;
 
 public class BlockStainedQuartzGlass extends BlockStainedGlass
 {
 	public BlockStainedQuartzGlass(String name)
 	{
 		super(Material.IRON);
-		this.setCreativeTab(BetterNether.BN_TAB);
+		this.setCreativeTab(RotNTweaker.BN_TAB);
 		this.setUnlocalizedName(name);
 		this.setRegistryName(name);
 		this.setHardness(3.0F);

@@ -25,7 +25,7 @@ import net.minecraft.util.math.AxisAlignedBB;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
-import com.rebirthofthenight.rotntweaker.modules.betternether.BetterNether;
+import com.rebirthofthenight.rotntweaker.RotNTweaker;
 
 public class BlockWartSeed extends Block implements IGrowable
 {
@@ -40,7 +40,7 @@ public class BlockWartSeed extends Block implements IGrowable
 	public BlockWartSeed()
 	{
 		super(Material.WOOD, MapColor.RED_STAINED_HARDENED_CLAY);
-		this.setCreativeTab(BetterNether.BN_TAB);
+		this.setCreativeTab(RotNTweaker.BN_TAB);
 		this.setHardness(1.0F);
 		this.setSoundType(SoundType.WOOD);
 		this.setRegistryName("wart_seed");

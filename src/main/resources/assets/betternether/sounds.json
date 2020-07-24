@@ -3,7 +3,7 @@
     "category": "neutral",
     "sounds": [
       {
-        "name": "betternether:mob/firefly/fly",
+        "name": "rotntweaker:mob/firefly/fly",
         "stream": false
       }
     ]

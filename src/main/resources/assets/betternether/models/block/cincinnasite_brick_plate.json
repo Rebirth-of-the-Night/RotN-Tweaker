@@ -1,6 +1,6 @@
 {
     "parent": "block/cube_all",
     "textures": {
-        "all": "betternether:blocks/cincinnasite_brick_plate"
+        "all": "rotntweaker:blocks/cincinnasite_brick_plate"
     }
 }

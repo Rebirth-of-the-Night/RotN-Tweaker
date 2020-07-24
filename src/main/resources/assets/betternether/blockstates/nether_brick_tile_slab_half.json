@@ -1,7 +1,7 @@
 {
     "variants":
 	{
-        "half=bottom": { "model": "betternether:nether_brick_tile_half_slab" },
-        "half=top": { "model": "betternether:nether_brick_tile_half_slab", "x": 180, "uvlock": true }
+        "half=bottom": { "model": "rotntweaker:nether_brick_tile_half_slab" },
+        "half=top": { "model": "rotntweaker:nether_brick_tile_half_slab", "x": 180, "uvlock": true }
     }
 }

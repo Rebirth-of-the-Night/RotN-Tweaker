@@ -1,6 +1,6 @@
 {
 	"parent": "item/generated",
     "textures": {
-        "layer0": "betternether:items/ink_bush_seed"
+        "layer0": "rotntweaker:items/ink_bush_seed"
     }
 }

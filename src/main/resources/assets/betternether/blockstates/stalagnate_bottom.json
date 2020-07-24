@@ -2,13 +2,13 @@
     "multipart":
 	[
         {
-			"apply": { "model": "betternether:stalagnate_bottom" }
+			"apply": { "model": "rotntweaker:stalagnate_bottom" }
 		},
 		{
-			"apply": { "model": "betternether:stalagnate_roots" }
+			"apply": { "model": "rotntweaker:stalagnate_roots" }
 		},
 		{
-			"apply": { "model": "betternether:stalagnate_roots_2" }
+			"apply": { "model": "rotntweaker:stalagnate_roots_2" }
 		}
     ]
 }

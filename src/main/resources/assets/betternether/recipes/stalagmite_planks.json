@@ -5,11 +5,11 @@
   ],
   "key": {
     "#": {
-      "item": "betternether:stalagnate_bark"
+      "item": "rotntweaker:stalagnate_bark"
     }
   },
   "result": {
-    "item": "betternether:stalagnate_planks",
+    "item": "rotntweaker:stalagnate_planks",
 	"count": 4
   }
 }

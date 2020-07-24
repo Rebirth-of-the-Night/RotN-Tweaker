@@ -1,9 +1,9 @@
 {
     "parent": "block/fence_post",
     "textures": {
-        "particle": "betternether:blocks/reeds_fence_side",
-		"texture": "betternether:blocks/reeds_fence_side",
-		"top": "betternether:blocks/reeds_fence_top"
+        "particle": "rotntweaker:blocks/reeds_fence_side",
+		"texture": "rotntweaker:blocks/reeds_fence_side",
+		"top": "rotntweaker:blocks/reeds_fence_top"
     },
 	"elements": [
         {   "from": [ 6, 0, 6 ],

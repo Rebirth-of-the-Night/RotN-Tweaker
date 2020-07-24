@@ -2,9 +2,9 @@
 	"__comment": "Designed by Paulevs with Cubik Studio - https://cubik.studio",
 	"ambientocclusion": false,
 	"textures": {
-		"particle": "betternether:blocks/quartz_glass_framed",
-		"bars": "betternether:blocks/quartz_glass_framed",
-		"edge": "betternether:blocks/cincinnasite_tiles_small"
+		"particle": "rotntweaker:blocks/quartz_glass_framed",
+		"bars": "rotntweaker:blocks/quartz_glass_framed",
+		"edge": "rotntweaker:blocks/cincinnasite_tiles_small"
 	},
 	"elements": [ 	 
 		{

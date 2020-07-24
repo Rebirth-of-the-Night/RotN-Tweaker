@@ -7,15 +7,15 @@
   ],
   "key": {
     "#": {
-      "item": "betternether:cincinnasite_forged"
+      "item": "rotntweaker:cincinnasite_forged"
     },
 	"G": {
-      "item": "betternether:quartz_glass",
+      "item": "rotntweaker:quartz_glass",
 	  "data": 32767
     }
   },
   "result": {
-    "item": "betternether:quartz_glass_framed",
+    "item": "rotntweaker:quartz_glass_framed",
 	"count": 8
   }
 }

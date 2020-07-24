@@ -5,11 +5,11 @@
   ],
   "key": {
     "#": {
-      "item": "betternether:reeds_block"
+      "item": "rotntweaker:reeds_block"
     }
   },
   "result": {
-    "item": "betternether:reeds_slab_half",
+    "item": "rotntweaker:reeds_slab_half",
 	"data": 0,
     "count": 6
   }

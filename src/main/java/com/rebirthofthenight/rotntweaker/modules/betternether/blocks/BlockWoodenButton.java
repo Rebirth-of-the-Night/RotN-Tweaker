@@ -2,7 +2,7 @@ package com.rebirthofthenight.rotntweaker.modules.betternether.blocks;
 
 import net.minecraft.block.BlockButtonWood;
 import net.minecraft.block.SoundType;
-import com.rebirthofthenight.rotntweaker.modules.betternether.BetterNether;
+import com.rebirthofthenight.rotntweaker.RotNTweaker;
 
 public class BlockWoodenButton extends BlockButtonWood
 {
@@ -13,6 +13,6 @@ public class BlockWoodenButton extends BlockButtonWood
 		this.setUnlocalizedName(name);
 		this.setSoundType(SoundType.WOOD);
 		this.setHardness(2.0F);
-		this.setCreativeTab(BetterNether.BN_TAB);
+		this.setCreativeTab(RotNTweaker.BN_TAB);
 	}
 }

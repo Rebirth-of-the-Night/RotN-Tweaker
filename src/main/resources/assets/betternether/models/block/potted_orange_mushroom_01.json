@@ -2,10 +2,10 @@
 	"__comment": "Designed by Paulevs with Cubik Studio - https://cubik.studio",
 	"parent": "block/block",
 	"textures": {
-		"particle": "betternether:blocks/orange_mushroom_side",
-		"side": "betternether:blocks/orange_mushroom_side",
-		"top": "betternether:blocks/orange_mushroom_top",
-		"bottom": "betternether:blocks/orange_mushroom_bottom"
+		"particle": "rotntweaker:blocks/orange_mushroom_side",
+		"side": "rotntweaker:blocks/orange_mushroom_side",
+		"top": "rotntweaker:blocks/orange_mushroom_top",
+		"bottom": "rotntweaker:blocks/orange_mushroom_bottom"
 	},
 	"elements": [ 	 
 		{

@@ -5,11 +5,11 @@
   ],
   "key": {
     "#": {
-      "item": "betternether:cincinnasite_forged"
+      "item": "rotntweaker:cincinnasite_forged"
     }
   },
   "result": {
-    "item": "betternether:cincinnasite_slab_half",
+    "item": "rotntweaker:cincinnasite_slab_half",
 	"data": 0,
     "count": 6
   }

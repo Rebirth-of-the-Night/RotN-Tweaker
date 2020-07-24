@@ -2,8 +2,8 @@
 	"__comment": "Designed by Paulevs with Cubik Studio - https://cubik.studio",
 	"parent": "block/block",
 	"textures": {
-		"particle": "betternether:blocks/black_apple",
-		"texture": "betternether:blocks/black_apple"
+		"particle": "rotntweaker:blocks/black_apple",
+		"texture": "rotntweaker:blocks/black_apple"
 	},
 	"elements": [ 	 
 		{
