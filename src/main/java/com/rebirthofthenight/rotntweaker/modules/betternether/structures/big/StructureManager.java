@@ -78,7 +78,7 @@ public abstract class StructureManager
 	{
 		for (BigStructure structure: structures)
 		{
-			if (structure.generationComplete() && !toRemove.contains(toRemove))
+			if (structure.generationComplete() && !toRemove.contains(structure))
 				toRemove.add(structure);
 			else
 				structure.setChunk(world, cx, cz);

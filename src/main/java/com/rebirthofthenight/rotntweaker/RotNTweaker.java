@@ -25,7 +25,7 @@ public class RotNTweaker
     public static CommonProxy proxy;
     private static Object mod;
 
-    private static Logger logger;
+    public static Logger logger;
 
     @EventHandler
     public void preInit(FMLPreInitializationEvent event)

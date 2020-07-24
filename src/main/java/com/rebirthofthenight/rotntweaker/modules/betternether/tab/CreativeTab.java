@@ -33,7 +33,7 @@ public class CreativeTab extends CreativeTabs
 		itemList.sort(comparator);
     }
 	
-	class ItemComparator implements Comparator
+	class ItemComparator implements Comparator<Object>
 	{
 		@Override
 		public int compare(Object arg0, Object arg1)

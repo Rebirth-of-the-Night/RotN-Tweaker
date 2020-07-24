@@ -16,7 +16,7 @@ public interface IStructureWorld
 	
 	default void setBlockAndNotifyAdequately(World world, BlockPos pos, IBlockState state)
     {
-        if (this.doBlockNotify)
+        if (doBlockNotify)
         {
             world.setBlockState(pos, state, 3);
         }

@@ -15,7 +15,6 @@ import net.minecraft.entity.Entity;
 import net.minecraft.entity.IEntityLivingData;
 import net.minecraft.entity.SharedMonsterAttributes;
 import net.minecraft.entity.passive.EntityAmbientCreature;
-import net.minecraft.entity.passive.IAnimals;
 import net.minecraft.init.Blocks;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.network.datasync.DataParameter;
@@ -48,7 +47,6 @@ public class EntityFirefly extends EntityAmbientCreature implements ILightProvid
 	private boolean sitting;
 	private boolean wantToSit;
 	private float sitY;
-	private float test;
 
 	public EntityFirefly(World worldIn)
 	{

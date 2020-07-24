@@ -10,7 +10,7 @@ public class EntityRenderRegister
 {
 	public static void register()
 	{
-		IRenderFactory renderFactory = new IRenderFactory<EntityFirefly>()
+		IRenderFactory<EntityFirefly> renderFactory = new IRenderFactory<EntityFirefly>()
 		{
 			@Override
 			public Render<? super EntityFirefly> createRenderFor(RenderManager manager)
