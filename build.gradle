@@ -41,7 +41,7 @@ repositories {
 }
 
 dependencies {
-    
+    compile 'albedo:albedo:1.12.2:1.1.0'
 }
 
 processResources {
