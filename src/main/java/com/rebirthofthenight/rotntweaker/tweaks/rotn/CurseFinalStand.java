@@ -1,6 +1,7 @@
-package com.rebirthofthenight.rotntweaker.modules.rotntweaks;
+package com.rebirthofthenight.rotntweaker.tweaks.rotn;
 
 import com.rebirthofthenight.rotntweaker.RotNTweaker;
+import com.rebirthofthenight.rotntweaker.config.RotNConfig;
 
 import java.util.Map;
 
@@ -16,6 +17,9 @@ public class CurseFinalStand {
 	private static Enchantment curseFinalStand;
 	
 	public static void postInit(FMLPostInitializationEvent event) {
+		if (!RotNConfig.TWEAKS.curseFinalStand)
+			return;
+
 		curseFinalStand = Enchantment.getEnchantmentByLocation("contenttweaker:curse_finalstand");
 		
 		if (curseFinalStand == null)
@@ -23,6 +27,9 @@ public class CurseFinalStand {
 	}
 	
 	public static void onAnvilUpdate(AnvilUpdateEvent event) {
+		if (!RotNConfig.TWEAKS.curseFinalStand)
+			return;
+		
 		ItemStack left = event.getLeft();
 		ItemStack right = event.getRight();
 		
