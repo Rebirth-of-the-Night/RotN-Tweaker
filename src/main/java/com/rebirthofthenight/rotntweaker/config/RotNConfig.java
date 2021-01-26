@@ -21,5 +21,9 @@ public class RotNConfig {
         @Config.Name("Curse of the Final Stand")
         @Config.Comment({"Whether to enable the modifications to the Curse of the Final Stand"})
         public boolean curseFinalStand = true;
+
+        @Config.Name("Remove Nameplates")
+        @Config.Comment({"Whether to remove Nameplates"})
+        public boolean noNameplates = true;
     }
 }
