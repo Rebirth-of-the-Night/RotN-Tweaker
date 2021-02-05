@@ -1,6 +1,0 @@
-{
-    "parent": "block/button",
-    "textures": {
-        "texture": "rotntweaker:blocks/reeds_block_side"
-    }
-}

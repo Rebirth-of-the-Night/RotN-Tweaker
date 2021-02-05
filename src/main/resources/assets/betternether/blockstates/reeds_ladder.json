@@ -1,8 +1,0 @@
-{
-    "variants": {
-        "facing=north": { "model": "rotntweaker:reeds_ladder" },
-        "facing=east":  { "model": "rotntweaker:reeds_ladder", "y": 90 },
-        "facing=south": { "model": "rotntweaker:reeds_ladder", "y": 180 },
-        "facing=west":  { "model": "rotntweaker:reeds_ladder", "y": 270 }
-    }
-}

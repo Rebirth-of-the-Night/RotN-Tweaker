@@ -1,8 +1,0 @@
-{
-    "parent": "block/orientable",
-    "textures": {
-        "top": "rotntweaker:blocks/cincinnasite_forge_top",
-        "front": "rotntweaker:blocks/cincinnasite_forge_front_off",
-        "side": "rotntweaker:blocks/cincinnasite_forge_side"
-    }
-}

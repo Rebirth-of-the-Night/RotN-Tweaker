@@ -1,7 +1,0 @@
-{
-    "parent": "rotntweaker:block/bn_door_top",
-    "textures": {
-        "front": "rotntweaker:blocks/bone_reed_door_upper",
-        "side": "rotntweaker:blocks/reeds_block_side"
-    }
-}

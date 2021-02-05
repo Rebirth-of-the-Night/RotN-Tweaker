@@ -1,8 +1,0 @@
-{
-    "parent": "block/outer_stairs",
-    "textures": {
-        "bottom": "rotntweaker:blocks/reeds_block_side",
-        "top": "rotntweaker:blocks/reeds_block_side",
-        "side": "rotntweaker:blocks/reeds_block_side"
-    }
-}

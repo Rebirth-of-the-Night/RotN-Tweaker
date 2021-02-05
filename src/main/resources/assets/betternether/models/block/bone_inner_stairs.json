@@ -1,8 +1,0 @@
-{
-    "parent": "block/inner_stairs",
-    "textures": {
-        "bottom": "rotntweaker:blocks/bone_block",
-        "top": "rotntweaker:blocks/bone_block",
-        "side": "rotntweaker:blocks/bone_block"
-    }
-}

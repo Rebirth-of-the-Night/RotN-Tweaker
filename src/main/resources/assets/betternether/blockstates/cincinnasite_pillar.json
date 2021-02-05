@@ -1,8 +1,0 @@
-{
-	"variants": {
-        "shape=top":  { "model": "rotntweaker:cincinnasite_pillar_top" },
-        "shape=bottom":  { "model": "rotntweaker:cincinnasite_pillar_bottom" },
-        "shape=middle":  { "model": "rotntweaker:cincinnasite_pillar_middle" },
-        "shape=small":  { "model": "rotntweaker:cincinnasite_pillar_small" }
-    }
-}

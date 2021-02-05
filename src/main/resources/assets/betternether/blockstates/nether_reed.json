@@ -1,6 +1,0 @@
-{
-	"variants": {
-        "shape=top":  { "model": "rotntweaker:nether_reed_top" },
-        "shape=bottom":  { "model": "rotntweaker:nether_reed" }
-    }
-}

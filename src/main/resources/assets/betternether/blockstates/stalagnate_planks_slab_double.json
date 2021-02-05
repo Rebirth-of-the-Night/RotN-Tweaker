@@ -1,7 +1,0 @@
-{
-    "variants":
-	{
-        "half=top": { "model": "rotntweaker:stalagnate_planks" },
-        "half=bottom": { "model": "rotntweaker:stalagnate_planks" }
-    }
-}

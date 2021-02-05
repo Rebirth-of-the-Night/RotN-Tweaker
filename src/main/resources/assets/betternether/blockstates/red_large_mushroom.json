@@ -1,7 +1,0 @@
-{
-	"variants": {
-        "shape=top":  { "model": "rotntweaker:red_mushroom_top" },
-		"shape=middle":  { "model": "rotntweaker:red_mushroom_middle" },
-        "shape=bottom":  { "model": "rotntweaker:red_mushroom_bottom" }
-    }
-}

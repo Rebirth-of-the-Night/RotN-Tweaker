@@ -1,6 +1,0 @@
-{
-    "variants": {
-        "state=false": { "model": "rotntweaker:cincinnasite_fire_bowl_off" },
-        "state=true": { "model": "rotntweaker:cincinnasite_fire_bowl_on" }
-    }
-}

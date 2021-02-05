@@ -1,7 +1,0 @@
-{
-    "variants":
-	{
-        "half=bottom": { "model": "rotntweaker:reeds_block" },
-        "half=top": { "model": "rotntweaker:reeds_block" }
-    }
-}

@@ -1,8 +1,0 @@
-{
-    "parent": "block/half_slab",
-    "textures": {
-        "bottom": "rotntweaker:blocks/reeds_block_top",
-        "top": "rotntweaker:blocks/reeds_block_top",
-        "side": "rotntweaker:blocks/reeds_block_side"
-    }
-}

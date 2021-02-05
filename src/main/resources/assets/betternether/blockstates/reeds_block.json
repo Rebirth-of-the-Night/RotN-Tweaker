@@ -1,7 +1,0 @@
-{
-    "variants": {
-        "axis=y": { "model": "rotntweaker:reeds_block" },
-        "axis=z": { "model": "rotntweaker:reeds_block", "x": 90 },
-        "axis=x": { "model": "rotntweaker:reeds_block", "x": 90, "y": 90 }
-    }
-}

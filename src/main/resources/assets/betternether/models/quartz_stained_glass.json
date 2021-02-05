@@ -1,6 +1,0 @@
-{
-    "parent": "rotntweaker:block/quartz_glass",
-	"textures": {
-        "all": "rotntweaker:items/quartz_glass"
-    }
-}

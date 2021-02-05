@@ -1,8 +1,0 @@
-{
-    "parent": "block/half_slab",
-    "textures": {
-        "bottom": "rotntweaker:blocks/cincinnasite_plate_up",
-        "top": "rotntweaker:blocks/cincinnasite_plate_up",
-        "side": "rotntweaker:blocks/cincinnasite_slab"
-    }
-}

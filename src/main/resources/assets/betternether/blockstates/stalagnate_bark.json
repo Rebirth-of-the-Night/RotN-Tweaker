@@ -1,7 +1,0 @@
-{
-    "variants": {
-        "axis=y": { "model": "rotntweaker:stalagnate_bark" },
-        "axis=z": { "model": "rotntweaker:stalagnate_bark", "x": 90 },
-        "axis=x": { "model": "rotntweaker:stalagnate_bark", "x": 90, "y": 90 }
-    }
-}

@@ -1,9 +1,0 @@
-{
-    "variants":
-	{
-        "normal":
-		[
-			{ "model": "rotntweaker:stalagnate_seed", "x": 180 }
-		]
-    }
-}

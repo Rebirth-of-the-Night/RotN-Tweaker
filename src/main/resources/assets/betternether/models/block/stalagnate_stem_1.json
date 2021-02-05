@@ -1,8 +1,0 @@
-{
-    "parent": "rotntweaker:block/stalagnate",
-	"textures":
-	{
-        "side": "rotntweaker:blocks/stalagnate_trunk_middle",
-        "top": "rotntweaker:blocks/stalagnate_top"
-    }
-}

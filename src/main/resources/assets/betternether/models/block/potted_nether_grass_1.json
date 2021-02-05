@@ -1,6 +1,0 @@
-{
-    "parent": "rotntweaker:block/grass_fan_pot",
-    "textures": {
-        "texture": "rotntweaker:blocks/ngrass_1"
-    }
-}

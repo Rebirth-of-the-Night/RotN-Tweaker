@@ -1,6 +1,0 @@
-{
-    "variants": {
-        "powered=false": { "model": "rotntweaker:stalagnate_pressure_plate_up" },
-        "powered=true": { "model": "rotntweaker:stalagnate_pressure_plate_down" }
-    }
-}

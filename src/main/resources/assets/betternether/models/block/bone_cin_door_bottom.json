@@ -1,7 +1,0 @@
-{
-    "parent": "rotntweaker:block/bn_door_bottom",
-    "textures": {
-        "front": "rotntweaker:blocks/bone_cin_door_lower",
-        "side": "rotntweaker:blocks/cincinnasite_forged"
-    }
-}

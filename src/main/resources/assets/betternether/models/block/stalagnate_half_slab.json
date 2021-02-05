@@ -1,8 +1,0 @@
-{
-    "parent": "block/half_slab",
-    "textures": {
-        "bottom": "rotntweaker:blocks/stalagnate_planks",
-        "top": "rotntweaker:blocks/stalagnate_planks",
-        "side": "rotntweaker:blocks/stalagnate_planks"
-    }
-}

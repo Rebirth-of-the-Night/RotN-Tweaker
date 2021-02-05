@@ -1,6 +1,0 @@
-{
-    "variants": {
-        "powered=false": { "model": "rotntweaker:reeds_pressure_plate_up" },
-        "powered=true": { "model": "rotntweaker:reeds_pressure_plate_down" }
-    }
-}

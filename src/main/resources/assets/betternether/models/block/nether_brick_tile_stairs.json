@@ -1,8 +1,0 @@
-{
-    "parent": "block/stairs",
-    "textures": {
-        "bottom": "rotntweaker:blocks/nether_brick_tile_small",
-        "top": "rotntweaker:blocks/nether_brick_tile_small",
-        "side": "rotntweaker:blocks/nether_brick_tile_small"
-    }
-}

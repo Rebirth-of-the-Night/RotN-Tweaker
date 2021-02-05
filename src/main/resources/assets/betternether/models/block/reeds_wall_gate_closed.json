@@ -1,6 +1,0 @@
-{
-    "parent": "block/wall_gate_closed",
-    "textures": {
-        "texture": "rotntweaker:blocks/reeds_block_side"
-    }
-}

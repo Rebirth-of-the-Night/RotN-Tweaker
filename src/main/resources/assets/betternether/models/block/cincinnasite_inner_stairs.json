@@ -1,8 +1,0 @@
-{
-    "parent": "block/inner_stairs",
-    "textures": {
-        "bottom": "rotntweaker:blocks/cincinnasite_forged",
-        "top": "rotntweaker:blocks/cincinnasite_forged",
-        "side": "rotntweaker:blocks/cincinnasite_forged"
-    }
-}

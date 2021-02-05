@@ -1,7 +1,0 @@
-{
-    "variants":
-	{
-        "half=top": { "model": "rotntweaker:cincinnasite_double_slab" },
-        "half=bottom": { "model": "rotntweaker:cincinnasite_double_slab" }
-    }
-}
