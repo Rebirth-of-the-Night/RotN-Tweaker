@@ -19,6 +19,10 @@ archivesBaseName = "RotN-Tweaker"
 
 sourceCompatibility = targetCompatibility = compileJava.sourceCompatibility = compileJava.targetCompatibility = '1.8' // Need this here so eclipse task generates correctly.
 
+sourceSets {
+    main.java.srcDirs = ['src/main/java', 'src/main/lenses']
+}
+
 minecraft {
     mappings channel: 'snapshot', version: '20171003-1.12'
 
