@@ -73,6 +73,10 @@ dependencies {
     // implementation 'albedo:albedo:1.12.2:1.1.0'
 }
 
+jar {
+    destinationDir = file("$rootDir/production")
+}
+
 jar.finalizedBy('reobfJar')
 
 processResources {
