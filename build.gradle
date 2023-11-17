@@ -21,6 +21,10 @@ sourceCompatibility = targetCompatibility = compileJava.sourceCompatibility = co
 
 minecraft {
     mappings channel: 'snapshot', version: '20171003-1.12'
+
+    accessTransformer = files(
+            'libs_at/bwm_at.cfg'
+    )
 	
     runs {
         client {
@@ -39,14 +43,28 @@ minecraft {
 
 repositories {
     maven {
-        name = 'CurseForge'
-        url = 'https://minecraft.curseforge.com/api/maven'
+        url "https://cursemaven.com"
+        content {
+            includeGroup "curse.maven"
+        }
+    }
+    flatDir {
+        dirs 'libs'
     }
 }
 
 dependencies {
     minecraft 'net.minecraftforge:forge:1.12.2-14.23.5.2860'
-    // compile 'albedo:albedo:1.12.2:1.1.0'
+
+
+    implementation fg.deobf("curse.maven:bwm-suite-246760:3289033")
+    implementation fg.deobf("curse.local:BetterWithLib-1.12:1.5")
+
+    implementation fg.deobf("curse.maven:pyrotech-306676:4798313")
+    implementation fg.deobf("curse.maven:athenaeum-284350:4633750")
+    implementation fg.deobf("curse.maven:dropt-284973:3758733")
+    implementation fg.deobf("curse.maven:patchouli-306770:3162874")
+    // implementation 'albedo:albedo:1.12.2:1.1.0'
 }
 
 jar.finalizedBy('reobfJar')
