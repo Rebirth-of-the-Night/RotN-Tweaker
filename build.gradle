@@ -30,12 +30,14 @@ minecraft {
     runs {
         client {
             workingDirectory project.file('run')
+            property "fml.coreMods.load", "gloomyfolken.hooklib.minecraft.MainHookLoader"
             property 'forge.logging.markers', 'SCAN,REGISTRIES,REGISTRYDUMP'
             property 'forge.logging.console.level', 'debug'
         }
 
         server {
             workingDirectory project.file('run')
+            property "fml.coreMods.load", "gloomyfolken.hooklib.minecraft.MainHookLoader"
             property 'forge.logging.markers', 'SCAN,REGISTRIES,REGISTRYDUMP'
             property 'forge.logging.console.level', 'debug'
         }
@@ -56,6 +58,8 @@ repositories {
 
 dependencies {
     minecraft 'net.minecraftforge:forge:1.12.2-14.23.5.2860'
+
+    implementation fg.deobf("abc:hooklib:2.7")
 
     implementation "curse.local:CraftTweaker2-1.12:4.1.20.695:deobf"
 
