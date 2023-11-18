@@ -55,6 +55,9 @@ repositories {
             includeGroup "curse.maven"
         }
     }
+    maven {
+        url "https://maven.blamejared.com"
+    }
     flatDir {
         dirs 'libs'
     }
@@ -65,10 +68,10 @@ dependencies {
 
     implementation fg.deobf("abc:hooklib:2.7")
 
-    implementation "curse.local:CraftTweaker2-1.12:4.1.20.695:deobf"
+    implementation "CraftTweaker2:CraftTweaker2-MC1120-Main:1.12-4.1.20.695:deobf"
 
     implementation fg.deobf("curse.maven:bwm-suite-246760:3289033")
-    implementation fg.deobf("curse.local:BetterWithLib-1.12:1.5")
+    implementation "betterwithmods.core:BetterWithLib:1.12-1.5:dev"
 
     implementation fg.deobf("curse.maven:pyrotech-306676:4798313")
     implementation fg.deobf("curse.maven:athenaeum-284350:4633750")
