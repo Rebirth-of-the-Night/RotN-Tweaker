@@ -18,13 +18,23 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 @SideOnly(Side.CLIENT)
 public class Vanilla {
 
-    @Hook
-    @OnExpression(expressionPattern = "randomDisplayTickPattern", shift = Shift.INSTEAD)
-    public static EnumParticleTypes randomDisplayTick(BlockTorch torch, IBlockState stateIn, World worldIn, BlockPos pos, Random rand) {
+    @Hook(targetMethod = "randomDisplayTick")
+    @OnExpression(expressionPattern = "replaceFlamePattern", shift = Shift.INSTEAD)
+    public static EnumParticleTypes replaceFlame(BlockTorch torch, IBlockState stateIn, World worldIn, BlockPos pos, Random rand) {
         return RotNConfig.TWEAKS.torchParticles.vanilla ? ParticleFlame2.FLAME2 : EnumParticleTypes.FLAME;
     }
 
-    public static EnumParticleTypes randomDisplayTickPattern() {
+    public static EnumParticleTypes replaceFlamePattern() {
         return EnumParticleTypes.FLAME;
+    }
+
+    @Hook(targetMethod = "randomDisplayTick")
+    @OnExpression(expressionPattern = "removeSmokePattern", shift = Shift.INSTEAD)
+    public static EnumParticleTypes removeSmoke(BlockTorch torch, IBlockState stateIn, World worldIn, BlockPos pos, Random rand) {
+        return RotNConfig.TWEAKS.torchParticles.vanilla ? ParticleNone.NONE : EnumParticleTypes.SMOKE_NORMAL;
+    }
+
+    public static EnumParticleTypes removeSmokePattern() {
+        return EnumParticleTypes.SMOKE_NORMAL;
     }
 }

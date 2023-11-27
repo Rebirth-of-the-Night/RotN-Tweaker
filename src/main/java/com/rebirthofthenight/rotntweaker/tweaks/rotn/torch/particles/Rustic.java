@@ -6,6 +6,7 @@ import gloomyfolken.hooklib.api.HookContainer;
 import gloomyfolken.hooklib.api.OnExpression;
 import gloomyfolken.hooklib.api.Shift;
 import java.util.Random;
+import net.minecraft.block.BlockTorch;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.util.EnumParticleTypes;
 import net.minecraft.util.math.BlockPos;
@@ -18,13 +19,23 @@ import rustic.common.blocks.BlockCandle;
 @SideOnly(Side.CLIENT)
 public class Rustic {
 
-    @Hook
-    @OnExpression(expressionPattern = "randomDisplayTickPattern", shift = Shift.INSTEAD)
-    public static EnumParticleTypes randomDisplayTick(BlockCandle torch, IBlockState stateIn, World worldIn, BlockPos pos, Random rand) {
+    @Hook(targetMethod = "randomDisplayTick")
+    @OnExpression(expressionPattern = "replaceFlamePattern", shift = Shift.INSTEAD)
+    public static EnumParticleTypes replaceFlame(BlockCandle torch, IBlockState stateIn, World worldIn, BlockPos pos, Random rand) {
         return RotNConfig.TWEAKS.torchParticles.rustic ? ParticleFlame2.FLAME2 : EnumParticleTypes.FLAME;
     }
 
-    public static EnumParticleTypes randomDisplayTickPattern() {
+    public static EnumParticleTypes replaceFlamePattern() {
         return EnumParticleTypes.FLAME;
+    }
+
+    @Hook(targetMethod = "randomDisplayTick")
+    @OnExpression(expressionPattern = "removeSmokePattern", shift = Shift.INSTEAD)
+    public static EnumParticleTypes removeSmoke(BlockCandle torch, IBlockState stateIn, World worldIn, BlockPos pos, Random rand) {
+        return RotNConfig.TWEAKS.torchParticles.rustic ? ParticleNone.NONE : EnumParticleTypes.SMOKE_NORMAL;
+    }
+
+    public static EnumParticleTypes removeSmokePattern() {
+        return EnumParticleTypes.SMOKE_NORMAL;
     }
 }
