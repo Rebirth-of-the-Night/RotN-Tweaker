@@ -2,20 +2,18 @@ package com.rebirthofthenight.rotntweaker.tweaks.rotn.torch.particles;
 
 import net.minecraft.client.particle.IParticleFactory;
 import net.minecraft.client.particle.Particle;
-import net.minecraft.client.particle.ParticleFlame;
 import net.minecraft.util.EnumParticleTypes;
 import net.minecraft.world.World;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
-@SideOnly(Side.CLIENT)
-public class ParticleFlame2 extends ParticleFlame {
+public class ParticleNone extends Particle {
 
-    public static EnumParticleTypes FLAME2;
+    public static EnumParticleTypes NONE;
 
-    protected ParticleFlame2(World worldIn, double xCoordIn, double yCoordIn, double zCoordIn, double xSpeedIn, double ySpeedIn, double zSpeedIn) {
+    public ParticleNone(World worldIn, double xCoordIn, double yCoordIn, double zCoordIn, double xSpeedIn, double ySpeedIn, double zSpeedIn) {
         super(worldIn, xCoordIn, yCoordIn, zCoordIn, xSpeedIn, ySpeedIn, zSpeedIn);
-        this.setParticleTextureIndex(50);
+        this.setParticleTextureIndex(207);
     }
 
 
@@ -25,7 +23,7 @@ public class ParticleFlame2 extends ParticleFlame {
         public Particle createParticle(int particleID, World worldIn,
                                        double xCoordIn, double yCoordIn, double zCoordIn,
                                        double xSpeedIn, double ySpeedIn, double zSpeedIn, int... unused) {
-            return new ParticleFlame2(worldIn, xCoordIn, yCoordIn, zCoordIn, xSpeedIn, ySpeedIn, zSpeedIn);
+            return new ParticleNone(worldIn, xCoordIn, yCoordIn, zCoordIn, xSpeedIn, ySpeedIn, zSpeedIn);
         }
     }
 }

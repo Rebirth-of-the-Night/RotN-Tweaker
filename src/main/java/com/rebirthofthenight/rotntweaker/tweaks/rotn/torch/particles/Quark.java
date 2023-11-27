@@ -18,13 +18,23 @@ import vazkii.quark.decoration.block.BlockCandle;
 @SideOnly(Side.CLIENT)
 public class Quark {
 
-    @Hook
-    @OnExpression(expressionPattern = "randomDisplayTickPattern", shift = Shift.INSTEAD)
-    public static EnumParticleTypes randomDisplayTick(BlockCandle torch, IBlockState stateIn, World worldIn, BlockPos pos, Random rand) {
+    @Hook(targetMethod = "randomDisplayTick")
+    @OnExpression(expressionPattern = "replaceFlamePattern", shift = Shift.INSTEAD)
+    public static EnumParticleTypes replaceFlame(BlockCandle torch, IBlockState stateIn, World worldIn, BlockPos pos, Random rand) {
         return RotNConfig.TWEAKS.torchParticles.quark ? ParticleFlame2.FLAME2 : EnumParticleTypes.FLAME;
     }
 
-    public static EnumParticleTypes randomDisplayTickPattern() {
+    public static EnumParticleTypes replaceFlamePattern() {
         return EnumParticleTypes.FLAME;
+    }
+
+    @Hook(targetMethod = "randomDisplayTick")
+    @OnExpression(expressionPattern = "removeSmokePattern", shift = Shift.INSTEAD)
+    public static EnumParticleTypes removeSmoke(BlockCandle torch, IBlockState stateIn, World worldIn, BlockPos pos, Random rand) {
+        return RotNConfig.TWEAKS.torchParticles.quark ? ParticleNone.NONE : EnumParticleTypes.SMOKE_NORMAL;
+    }
+
+    public static EnumParticleTypes removeSmokePattern() {
+        return EnumParticleTypes.SMOKE_NORMAL;
     }
 }
