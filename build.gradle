@@ -64,7 +64,7 @@ repositories {
 }
 
 dependencies {
-    minecraft 'net.minecraftforge:forge:1.12.2-14.23.5.2860'
+    minecraft 'net.minecraftforge:forge:1.20-46.0.14'
 
     implementation fg.deobf("abc:hooklib:2.8")
 
