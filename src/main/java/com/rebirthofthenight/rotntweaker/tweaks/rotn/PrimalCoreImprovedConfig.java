@@ -60,7 +60,7 @@ public class PrimalCoreImprovedConfig {
                 IBlockState state = block.getDefaultState();
                 for (String prop : s.substring(propStart + 1, s.length() - 1).split(",")) {
 
-                    int eq = prop.indexOf('=');
+                    int eq = prop.indexOf(':');
                     String propName = prop.substring(0, eq);
                     String propValue = prop.substring(eq + 1);
                     IProperty<? extends Comparable> property = blockStateContainer.getProperty(propName);
