@@ -5,9 +5,9 @@ import gloomyfolken.hooklib.api.Hook;
 import gloomyfolken.hooklib.api.HookContainer;
 import gloomyfolken.hooklib.api.LocalVariable;
 import gloomyfolken.hooklib.api.OnBegin;
-import gloomyfolken.hooklib.api.OnExpression;
 import gloomyfolken.hooklib.api.OnMethodCall;
 import gloomyfolken.hooklib.api.OnReturn;
+import gloomyfolken.hooklib.api.PrintLocalVariables;
 import gloomyfolken.hooklib.api.ReturnConstant;
 import gloomyfolken.hooklib.api.Shift;
 import gloomyfolken.hooklib.asm.ReturnCondition;
@@ -108,14 +108,10 @@ public class PrimalCoreImprovedConfig {
 
 
     @Hook
-    @OnExpression(expressionPattern = "getBlockFromNamePattern", shift = Shift.INSTEAD)
-    public static Block getBlockList(CommonUtils commonUtils, String[] array, @LocalVariable(5) java.lang.String name) {
+    @OnMethodCall(value = "getBlockFromName", shift = Shift.INSTEAD)
+    public static Block getBlockList(CommonUtils commonUtils, String[] array, @LocalVariable(6) java.lang.String name) {
         int propStart = name.indexOf('[');
         return Block.getBlockFromName(propStart > 0 ? name.substring(0, propStart) : name);
-    }
-
-    public static Block getBlockFromNamePattern(String name) {
-        return Block.getBlockFromName(name);
     }
 
     @Hook
