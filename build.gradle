@@ -68,7 +68,7 @@ dependencies {
 
     implementation fg.deobf("abc:hooklib:2.8")
 
-    implementation "CraftTweaker2:CraftTweaker2-MC1120-Main:1.12-4.1.20.695:deobf"
+    implementation "CraftTweaker2:CraftTweaker2-MC1120-Main:1.12-4.1.20.696:deobf"
 
     implementation fg.deobf("curse.maven:bwm-suite-246760:3289033")
     implementation "betterwithmods.core:BetterWithLib:1.12-1.5:dev"
