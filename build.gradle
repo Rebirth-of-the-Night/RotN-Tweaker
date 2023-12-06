@@ -69,7 +69,7 @@ dependencies {
 
     implementation fg.deobf("abc:hooklib:2.12")
 
-    implementation "CraftTweaker2:CraftTweaker2-MC1120-Main:1.12-4.1.20.695:deobf"
+    implementation "CraftTweaker2:CraftTweaker2-MC1120-Main:1.12-4.1.20.696:deobf"
 
     implementation fg.deobf("curse.maven:rustic-256141:3107974")
 
