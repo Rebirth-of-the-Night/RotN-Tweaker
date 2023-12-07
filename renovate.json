@@ -5,6 +5,7 @@
   "ignoreDeps": [
     "gradle",
     "net.minecraftforge:forge",
-    "net.minecraftforge.gradle:ForgeGradle"
+    "net.minecraftforge.gradle:ForgeGradle",
+    "vazkii.autoreglib:AutoRegLib"
   ]
 }
