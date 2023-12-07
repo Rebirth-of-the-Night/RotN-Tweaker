@@ -4,6 +4,7 @@
   ],
   "ignoreDeps": [
     "gradle",
-    "net.minecraftforge:forge"
+    "net.minecraftforge:forge",
+    "net.minecraftforge.gradle:ForgeGradle"
   ]
 }
