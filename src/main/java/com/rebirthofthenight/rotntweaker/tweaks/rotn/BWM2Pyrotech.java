@@ -14,10 +14,7 @@ import com.codetaylor.mc.pyrotech.modules.tech.machine.tile.spi.TileCogWorkerBas
 import com.codetaylor.mc.pyrotech.modules.tech.machine.tile.spi.TileLense;
 import com.google.common.base.Suppliers;
 import com.rebirthofthenight.rotntweaker.RotNTweaker;
-import gloomyfolken.hooklib.api.FieldLens;
-import gloomyfolken.hooklib.api.Hook;
-import gloomyfolken.hooklib.api.HookContainer;
-import gloomyfolken.hooklib.api.OnMethodCall;
+import gloomyfolken.hooklib.api.*;
 import java.util.function.Supplier;
 import javax.annotation.Nonnull;
 import javax.annotation.Nullable;
@@ -33,6 +30,7 @@ import net.minecraftforge.common.capabilities.ICapabilityProvider;
 import net.minecraftforge.event.AttachCapabilitiesEvent;
 import net.minecraftforge.fml.common.Mod.EventBusSubscriber;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
+import net.minecraftforge.fml.relauncher.*;
 
 @HookContainer
 @EventBusSubscriber
@@ -70,29 +68,25 @@ public class BWM2Pyrotech {
             return;
         }
 
-        TickCounter tickCounter = updateTickCounter(tile);
+        TickCounter tickCounter = updateTickCounter.get(tile);
         boolean ready = tickCounter != null && tickCounter.increment();
 
         if (ready) {
             tickCounter.reset();
             int cogDamage = TileLense.doWork(tile, fakeCog.get());
             if (cogDamage >= 0) {
-                triggered(tile).set(true);
+                triggered.get(tile).set(true);
                 return;
             }
         }
-        triggered(tile).set(false);
+        triggered.get(tile).set(false);
     }
 
     @FieldLens
-    public static TickCounter updateTickCounter(TileCogWorkerBase tile) {
-        return null;
-    }
+    public static FieldAccessor<TileCogWorkerBase, TickCounter> updateTickCounter;
 
     @FieldLens
-    public static TileDataBoolean triggered(TileCogWorkerBase tile) {
-        return null;
-    }
+    public static FieldAccessor<TileCogWorkerBase, TileDataBoolean> triggered;
 
     private static EnumFacing getCogSide(TileCogWorkerBase tile) {
         World world = tile.getWorld();

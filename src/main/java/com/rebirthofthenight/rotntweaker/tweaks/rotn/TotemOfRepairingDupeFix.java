@@ -1,41 +1,37 @@
 package com.rebirthofthenight.rotntweaker.tweaks.rotn;
 
-import gloomyfolken.hooklib.api.Hook;
-import gloomyfolken.hooklib.api.HookContainer;
-import gloomyfolken.hooklib.api.OnBegin;
-import gloomyfolken.hooklib.api.ReturnConstant;
-import gloomyfolken.hooklib.asm.ReturnCondition;
-import java.util.Random;
-import javax.annotation.Nullable;
-import net.minecraft.entity.player.EntityPlayerMP;
-import net.minecraft.item.ItemShears;
-import net.minecraft.item.ItemStack;
-import net.minecraftforge.event.entity.player.PlayerDestroyItemEvent;
-import party.lemons.totemexpansion.handler.TotemEventHandler;
-import party.lemons.totemexpansion.item.TotemType;
+import gloomyfolken.hooklib.api.*;
+import java.util.*;
+import javax.annotation.*;
+import net.minecraft.entity.player.*;
+import net.minecraft.item.*;
+import net.minecraftforge.event.entity.player.*;
+import party.lemons.totemexpansion.handler.*;
+import party.lemons.totemexpansion.item.*;
 
 @HookContainer
 public class TotemOfRepairingDupeFix {
 
-    @Hook(returnCondition = ReturnCondition.ALWAYS)
+    @Hook
     @OnBegin
-    public static void onToolBreak(TotemEventHandler handler, PlayerDestroyItemEvent event) {
+    public static ReturnSolve<Void> onToolBreak(TotemEventHandler handler, PlayerDestroyItemEvent event) {
+        return ReturnSolve.yes(null);
     }
 
-    @Hook(returnCondition = ReturnCondition.ON_TRUE, returnConstant = @ReturnConstant(booleanValue = false))
+    @Hook
     @OnBegin
-    public static boolean attemptDamageItem(ItemStack stack, int amount, Random rand, @Nullable EntityPlayerMP damager) {
+    public static ReturnSolve<Boolean> attemptDamageItem(ItemStack stack, int amount, Random rand, @Nullable EntityPlayerMP damager) {
         if (damager != null) {
             if (stack.getItemDamage() + amount > stack.getMaxDamage()) {
                 ItemStack totem = TotemEventHandler.findTotem(damager, TotemType.TOOL_BREAK);
                 if (!totem.isEmpty()) {
                     if (TotemEventHandler.activateTotem(damager, totem, null)) {
                         stack.setItemDamage(0);
-                        return true;
+                        return ReturnSolve.yes(false);
                     }
                 }
             }
         }
-        return false;
+        return ReturnSolve.no();
     }
 }
