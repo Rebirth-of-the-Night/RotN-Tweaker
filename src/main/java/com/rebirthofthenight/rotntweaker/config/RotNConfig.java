@@ -1,7 +1,7 @@
 package com.rebirthofthenight.rotntweaker.config;
 
-import com.rebirthofthenight.rotntweaker.RotNTweaker;
-import net.minecraftforge.common.config.Config;
+import com.rebirthofthenight.rotntweaker.*;
+import net.minecraftforge.common.config.*;
 
 @Config(modid = RotNTweaker.MODID)
 public class RotNConfig {
@@ -29,6 +29,12 @@ public class RotNConfig {
         @Config.Comment({"if true, torch flame particles will be replaced from (0,24) to (16,24) texture coords"})
         public TorchParticleConfig torchParticles = new TorchParticleConfig();
 
+        @Config.Comment({
+            "Work periods at which Pyrotech machines work when powered by BWE axles",
+            "This options will override same options in Pyrotech config, as example, ./config/pyrotech/module.tech.Machine.cfg#MECHANICAL_COMPACTING_BIN#WORK_INTERVAL_TICKS"
+        })
+        public PyrotechSpeedModifiersConfig pyrotechSpeedModifiers = new PyrotechSpeedModifiersConfig();
+
         public static final class TorchParticleConfig {
 
             @Config.Comment({"if true, vanilla torch flame particles will be replaced"})
@@ -42,6 +48,31 @@ public class RotNConfig {
 
             @Config.Comment({"if true, Rustic candle flame particles will be replaced"})
             public boolean rustic = true;
+        }
+
+        public static final class PyrotechSpeedModifiersConfig {
+
+            public WoodAxle woodAxle = new WoodAxle();
+            public SteelAxle steelAxle = new SteelAxle();
+
+
+            public static final class WoodAxle {
+
+                public double bellows = 110;
+                public double binWorker = 40;
+                public double mulchSpreader = 200;
+                public double hopper = 40;
+                public double hammer = 100;
+            }
+
+            public static final class SteelAxle {
+
+                public double bellows = 110;
+                public double binWorker = 40;
+                public double mulchSpreader = 200;
+                public double hopper = 40;
+                public double hammer = 100;
+            }
         }
 
     }
