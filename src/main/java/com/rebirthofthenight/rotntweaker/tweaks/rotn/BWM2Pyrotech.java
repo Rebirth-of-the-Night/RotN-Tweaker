@@ -1,36 +1,29 @@
 package com.rebirthofthenight.rotntweaker.tweaks.rotn;
 
-import betterwithmods.api.BWMAPI;
-import betterwithmods.api.capabilities.CapabilityMechanicalPower;
-import betterwithmods.api.tile.IMechanicalPower;
-import com.codetaylor.mc.athenaeum.network.tile.data.TileDataBoolean;
-import com.codetaylor.mc.athenaeum.util.TickCounter;
-import com.codetaylor.mc.pyrotech.modules.tech.machine.ModuleTechMachine.Items;
-import com.codetaylor.mc.pyrotech.modules.tech.machine.tile.TileMechanicalBellowsTop;
-import com.codetaylor.mc.pyrotech.modules.tech.machine.tile.TileMechanicalCompactingBinWorker;
-import com.codetaylor.mc.pyrotech.modules.tech.machine.tile.TileMechanicalMulchSpreader;
-import com.codetaylor.mc.pyrotech.modules.tech.machine.tile.TileTripHammer;
-import com.codetaylor.mc.pyrotech.modules.tech.machine.tile.spi.TileCogWorkerBase;
-import com.codetaylor.mc.pyrotech.modules.tech.machine.tile.spi.TileLense;
-import com.google.common.base.Suppliers;
-import com.rebirthofthenight.rotntweaker.RotNTweaker;
+import static gloomyfolken.hooklib.api.Shift.INSTEAD;
+
+import betterwithmods.api.*;
+import betterwithmods.api.capabilities.*;
+import betterwithmods.api.tile.*;
+import com.codetaylor.mc.athenaeum.network.tile.data.*;
+import com.codetaylor.mc.pyrotech.modules.tech.machine.ModuleTechMachine.*;
+import com.codetaylor.mc.pyrotech.modules.tech.machine.tile.*;
+import com.codetaylor.mc.pyrotech.modules.tech.machine.tile.spi.*;
+import com.google.common.base.*;
+import com.rebirthofthenight.rotntweaker.*;
 import gloomyfolken.hooklib.api.*;
 import java.util.function.Supplier;
-import javax.annotation.Nonnull;
-import javax.annotation.Nullable;
-import net.minecraft.block.Block;
-import net.minecraft.item.ItemStack;
-import net.minecraft.tileentity.TileEntity;
-import net.minecraft.util.EnumFacing;
-import net.minecraft.util.ResourceLocation;
-import net.minecraft.util.math.BlockPos;
-import net.minecraft.world.World;
-import net.minecraftforge.common.capabilities.Capability;
-import net.minecraftforge.common.capabilities.ICapabilityProvider;
-import net.minecraftforge.event.AttachCapabilitiesEvent;
-import net.minecraftforge.fml.common.Mod.EventBusSubscriber;
-import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
-import net.minecraftforge.fml.relauncher.*;
+import javax.annotation.*;
+import net.minecraft.block.*;
+import net.minecraft.item.*;
+import net.minecraft.tileentity.*;
+import net.minecraft.util.*;
+import net.minecraft.util.math.*;
+import net.minecraft.world.*;
+import net.minecraftforge.common.capabilities.*;
+import net.minecraftforge.event.*;
+import net.minecraftforge.fml.common.Mod.*;
+import net.minecraftforge.fml.common.eventhandler.*;
 
 @HookContainer
 @EventBusSubscriber
@@ -43,10 +36,16 @@ public class BWM2Pyrotech {
         if (event.getObject() instanceof TileCogWorkerBase) {
             TileCogWorkerBase tile = (TileCogWorkerBase) event.getObject();
             event.addCapability(
-                    new ResourceLocation(RotNTweaker.MODID, "bwm_power"),
-                    new MechanicalPowerProvider(tile, tile instanceof TileMechanicalMulchSpreader ? 2 : 1)
+                new ResourceLocation(RotNTweaker.MODID, "bwm_power"),
+                new MechanicalPowerProvider(tile, tile instanceof TileMechanicalMulchSpreader ? 2 : 1)
             );
         }
+    }
+
+    @Hook(targetMethod = "doWork")
+    @OnMethodCall(value = "getCog",shift = INSTEAD)
+    public static ItemStack useFakeCog(TileMechanicalCompactingBinWorker tile, ItemStack cog) {
+        return fakeCog.get();
     }
 
     @Hook
@@ -64,12 +63,14 @@ public class BWM2Pyrotech {
 
         EnumFacing facing = getCogSide(tile);
 
-        if (capa.getMechanicalInput(facing) < capa.getMinimumInput(facing)) {
+        int mechanicalInput = capa.getMechanicalInput(facing);
+        if (mechanicalInput < capa.getMinimumInput(facing)) {
             return;
         }
 
-        TickCounter tickCounter = updateTickCounter.get(tile);
-        boolean ready = tickCounter != null && tickCounter.increment();
+        CustomTickCounter tickCounter = updateTickCounter2.get(tile);
+
+        boolean ready = tickCounter != null && tickCounter.increment(mechanicalInput);
 
         if (ready) {
             tickCounter.reset();
@@ -82,8 +83,8 @@ public class BWM2Pyrotech {
         triggered.get(tile).set(false);
     }
 
-    @FieldLens
-    public static FieldAccessor<TileCogWorkerBase, TickCounter> updateTickCounter;
+    @FieldLens(createField = true)
+    public static FieldAccessor<TileCogWorkerBase, CustomTickCounter> updateTickCounter2;
 
     @FieldLens
     public static FieldAccessor<TileCogWorkerBase, TileDataBoolean> triggered;
@@ -172,6 +173,33 @@ public class BWM2Pyrotech {
                 return CapabilityMechanicalPower.MECHANICAL_POWER.cast(this);
             } else {
                 return null;
+            }
+        }
+    }
+
+    public static class CustomTickCounter {
+
+        private final int woodMax;
+        private final int steelMax;
+        private int count;
+
+        public CustomTickCounter(int woodMax, int steelMax) {
+            this.woodMax = woodMax;
+            this.steelMax = steelMax;
+        }
+
+        public void reset() {
+            this.count = 0;
+        }
+
+        public boolean increment(int power) {
+            boolean isWoodPowered = !(power > 2);
+            this.count += 1;
+            if (this.count >= (isWoodPowered ? woodMax : steelMax)) {
+                this.reset();
+                return true;
+            } else {
+                return false;
             }
         }
     }

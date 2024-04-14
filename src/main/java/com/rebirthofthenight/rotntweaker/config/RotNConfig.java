@@ -33,7 +33,7 @@ public class RotNConfig {
             "Work periods at which Pyrotech machines work when powered by BWE axles",
             "This options will override same options in Pyrotech config, as example, ./config/pyrotech/module.tech.Machine.cfg#MECHANICAL_COMPACTING_BIN#WORK_INTERVAL_TICKS"
         })
-        public PyrotechSpeedModifiersConfig pyrotechSpeedModifiers = new PyrotechSpeedModifiersConfig();
+        public PyrotechSpeedModifiersConfig pyrotech_speed_modifiers = new PyrotechSpeedModifiersConfig();
 
         public static final class TorchParticleConfig {
 
@@ -52,26 +52,26 @@ public class RotNConfig {
 
         public static final class PyrotechSpeedModifiersConfig {
 
-            public WoodAxle woodAxle = new WoodAxle();
-            public SteelAxle steelAxle = new SteelAxle();
+            public WoodAxle wood_axle = new WoodAxle();
+            public SteelAxle steel_axle = new SteelAxle();
 
 
             public static final class WoodAxle {
 
-                public double bellows = 110;
-                public double binWorker = 40;
-                public double mulchSpreader = 200;
-                public double hopper = 40;
-                public double hammer = 100;
+                public int bellows = 110;
+                public int compactingBin = 40;
+                public int mulchSpreader = 200;
+                public int hopper = 40;
+                public int hammer = 100;
             }
 
             public static final class SteelAxle {
 
-                public double bellows = 110;
-                public double binWorker = 40;
-                public double mulchSpreader = 200;
-                public double hopper = 40;
-                public double hammer = 100;
+                public int bellows = 55;
+                public int compactingBin = 20;
+                public int mulchSpreader = 100;
+                public int hopper = 20;
+                public int hammer = 50;
             }
         }
 
