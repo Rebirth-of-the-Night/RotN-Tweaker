@@ -30,8 +30,9 @@ public class RotNConfig {
         public TorchParticleConfig torchParticles = new TorchParticleConfig();
 
         @Config.Comment({
-            "Work periods at which Pyrotech machines work when powered by BWE axles",
-            "This options will override same options in Pyrotech config, as example, ./config/pyrotech/module.tech.Machine.cfg#MECHANICAL_COMPACTING_BIN#WORK_INTERVAL_TICKS"
+            "Intervals at which Pyrotech machines work (every x ticks) when powered by BWM/BWE axles",
+            "These options override correpsonding options in the Pyrotech config, e.g. at",
+            "config/pyrotech/module.tech.Machine.cfg#MECHANICAL_COMPACTING_BIN#WORK_INTERVAL_TICKS"
         })
         public PyrotechSpeedModifiersConfig pyrotech_speed_modifiers = new PyrotechSpeedModifiersConfig();
 
