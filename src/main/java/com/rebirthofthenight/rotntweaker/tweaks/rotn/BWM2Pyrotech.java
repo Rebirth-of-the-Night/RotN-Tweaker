@@ -23,16 +23,16 @@ import net.minecraft.world.*;
 import net.minecraftforge.common.capabilities.*;
 import net.minecraftforge.event.*;
 import net.minecraftforge.fml.common.Mod.*;
+import net.minecraftforge.fml.common.Optional.*;
 import net.minecraftforge.fml.common.eventhandler.*;
 
 @HookContainer
-@EventBusSubscriber
 public class BWM2Pyrotech {
 
     private static Supplier<ItemStack> fakeCog = Suppliers.memoize(() -> new ItemStack(Items.IRON_COG));
 
     @SubscribeEvent
-    public static void attachCapa(AttachCapabilitiesEvent<TileEntity> event) {
+    public void attachCapa(AttachCapabilitiesEvent<TileEntity> event) {
         if (event.getObject() instanceof TileCogWorkerBase) {
             TileCogWorkerBase tile = (TileCogWorkerBase) event.getObject();
             event.addCapability(

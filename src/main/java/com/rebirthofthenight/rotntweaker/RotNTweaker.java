@@ -1,19 +1,17 @@
 package com.rebirthofthenight.rotntweaker;
 
-import com.rebirthofthenight.rotntweaker.tweaks.rotn.torch.particles.ParticleFlame2;
-import com.rebirthofthenight.rotntweaker.tweaks.rotn.torch.particles.ParticleNone;
-import net.minecraft.client.Minecraft;
-import net.minecraft.client.particle.IParticleFactory;
-import net.minecraft.util.EnumParticleTypes;
-import net.minecraftforge.common.util.EnumHelper;
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.fml.common.Mod.EventHandler;
-import net.minecraftforge.fml.common.event.FMLInitializationEvent;
-import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
-import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
-import net.minecraftforge.fml.relauncher.Side;
-import net.minecraftforge.fml.relauncher.SideOnly;
-import org.apache.logging.log4j.Logger;
+import com.rebirthofthenight.rotntweaker.tweaks.rotn.*;
+import com.rebirthofthenight.rotntweaker.tweaks.rotn.torch.particles.*;
+import net.minecraft.client.*;
+import net.minecraft.client.particle.*;
+import net.minecraft.util.*;
+import net.minecraftforge.common.*;
+import net.minecraftforge.common.util.*;
+import net.minecraftforge.fml.common.*;
+import net.minecraftforge.fml.common.Mod.*;
+import net.minecraftforge.fml.common.event.*;
+import net.minecraftforge.fml.relauncher.*;
+import org.apache.logging.log4j.*;
 
 @Mod(modid = RotNTweaker.MODID, name = RotNTweaker.NAME, version = RotNTweaker.VERSION)
 public class RotNTweaker {
@@ -40,13 +38,17 @@ public class RotNTweaker {
     public void postInit(FMLPostInitializationEvent event) {
         ParticleFlame2.FLAME2 = registerParticle("flame2", new ParticleFlame2.Factory());
         ParticleNone.NONE = registerParticle("none", new ParticleNone.Factory());
+
+        if (Loader.isModLoaded("pyrotech") && Loader.isModLoaded("betterwithmods")) {
+            MinecraftForge.EVENT_BUS.register(new BWM2Pyrotech());
+        }
     }
 
     @SideOnly(Side.CLIENT)
     private static EnumParticleTypes registerParticle(String name, IParticleFactory factory) {
         EnumParticleTypes r = EnumHelper.addEnum(EnumParticleTypes.class, name.toUpperCase(),
-                new Class[]{String.class, int.class, boolean.class},
-                name, EnumParticleTypes.values().length, false
+            new Class[]{String.class, int.class, boolean.class},
+            name, EnumParticleTypes.values().length, false
         );
         Minecraft.getMinecraft().effectRenderer.registerParticle(r.getParticleID(), factory);
         return r;
