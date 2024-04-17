@@ -1,33 +1,18 @@
 package com.rebirthofthenight.rotntweaker.tweaks.rotn;
 
 import com.google.common.base.Optional;
-import gloomyfolken.hooklib.api.Hook;
-import gloomyfolken.hooklib.api.HookContainer;
-import gloomyfolken.hooklib.api.LocalVariable;
-import gloomyfolken.hooklib.api.OnBegin;
-import gloomyfolken.hooklib.api.OnMethodCall;
-import gloomyfolken.hooklib.api.OnReturn;
-import gloomyfolken.hooklib.api.PrintLocalVariables;
-import gloomyfolken.hooklib.api.ReturnConstant;
-import gloomyfolken.hooklib.api.Shift;
-import gloomyfolken.hooklib.asm.ReturnCondition;
-import java.util.Arrays;
-import java.util.Set;
-import java.util.stream.Collectors;
-import java.util.stream.Stream;
-import net.minecraft.block.Block;
-import net.minecraft.block.properties.IProperty;
-import net.minecraft.block.state.BlockStateContainer;
-import net.minecraft.block.state.IBlockState;
-import net.minecraft.init.Blocks;
-import net.minecraft.util.EnumFacing;
-import net.minecraft.util.math.BlockPos;
-import net.minecraft.world.IBlockAccess;
-import net.minecraft.world.World;
-import nmd.primal.core.common.helper.BlockHelper;
-import nmd.primal.core.common.helper.CommonUtils;
-import nmd.primal.core.common.helper.FireHelper;
-import nmd.primal.core.common.init.ModConfig;
+import gloomyfolken.hooklib.api.*;
+import java.util.*;
+import java.util.stream.*;
+import net.minecraft.block.*;
+import net.minecraft.block.properties.*;
+import net.minecraft.block.state.*;
+import net.minecraft.init.*;
+import net.minecraft.util.*;
+import net.minecraft.util.math.*;
+import net.minecraft.world.*;
+import nmd.primal.core.common.helper.*;
+import nmd.primal.core.common.init.*;
 
 @HookContainer
 public class PrimalCoreImprovedConfig {
@@ -86,30 +71,42 @@ public class PrimalCoreImprovedConfig {
         }
     }
 
-    @Hook(returnCondition = ReturnCondition.ON_TRUE, returnConstant = @ReturnConstant(booleanValue = true))
+    @Hook
     @OnBegin
-    public static boolean isFireSource(FireHelper fireHelper, IBlockAccess world, BlockPos pos, IBlockState state) {
-        return FIRE_SOURCE_BLOCKS().contains(state);
+    public static ReturnSolve<Boolean> isFireSource(FireHelper fireHelper, IBlockAccess world, BlockPos pos, IBlockState state) {
+        if (FIRE_SOURCE_BLOCKS().contains(state)) {
+            return ReturnSolve.yes(true);
+        } else {
+            return ReturnSolve.no();
+        }
     }
 
-    @Hook(returnCondition = ReturnCondition.ON_TRUE, returnConstant = @ReturnConstant(booleanValue = true))
+    @Hook
     @OnMethodCall("getBlock")
-    public static boolean hasNearByHeat(FireHelper fireHelper, World world, BlockPos pos, int horizontal, int vertical, boolean include_fire_sources,
-                                        @LocalVariable(7) IBlockState check_state) {
-        return HEAT_SOURCE_BLOCKS().contains(check_state);
+    public static ReturnSolve<Boolean> hasNearByHeat(FireHelper fireHelper, World world, BlockPos pos, int horizontal, int vertical, boolean include_fire_sources,
+                                                     @LocalVariable(id = 7) IBlockState check_state) {
+        if (HEAT_SOURCE_BLOCKS().contains(check_state)) {
+            return ReturnSolve.yes(true);
+        } else {
+            return ReturnSolve.no();
+        }
     }
 
-    @Hook(returnCondition = ReturnCondition.ON_TRUE, returnConstant = @ReturnConstant(booleanValue = true))
+    @Hook
     @OnMethodCall("getBlock")
-    public static boolean hasDirectHeat(FireHelper fireHelper, World world, BlockPos pos, EnumFacing facing,
-                                        @LocalVariable(4) IBlockState check_state) {
-        return HEAT_SOURCE_BLOCKS().contains(check_state);
+    public static ReturnSolve<Boolean> hasDirectHeat(FireHelper fireHelper, World world, BlockPos pos, EnumFacing facing,
+                                                     @LocalVariable(id = 4) IBlockState check_state) {
+        if (HEAT_SOURCE_BLOCKS().contains(check_state)) {
+            return ReturnSolve.yes(true);
+        } else {
+            return ReturnSolve.no();
+        }
     }
 
 
     @Hook
     @OnMethodCall(value = "getBlockFromName", shift = Shift.INSTEAD)
-    public static Block getBlockList(CommonUtils commonUtils, String[] array, @LocalVariable(6) java.lang.String name) {
+    public static Block getBlockList(CommonUtils commonUtils, String[] array, @LocalVariable(id = 6) java.lang.String name) {
         int propStart = name.indexOf('[');
         return Block.getBlockFromName(propStart > 0 ? name.substring(0, propStart) : name);
     }
