@@ -90,6 +90,8 @@ dependencies {
     implementation fg.deobf("curse.maven:athenaeum-284350:4633750")
     implementation fg.deobf("curse.maven:dropt-284973:3758733")
     implementation fg.deobf("curse.maven:patchouli-306770:3162874")
+
+    implementation fg.deobf("curse.maven:applecore-224472:2969118")
     // implementation 'albedo:albedo:1.12.2:1.1.0'
 }
 

@@ -1,0 +1,17 @@
+item.rotntweaker.smelting_vessel.name=Smelting Vessel
+
+potion.activate_cooling=Cooling
+potion.activate_warming=Warming
+potion.cardiac_arrest=Cardiac Arrest
+potion.clean=Clean
+potion.freezing=Freezing
+potion.gale_barrier=Gale Barrier
+potion.scorching=Scorching
+potion.soul_stream=Soul Stream
+potion.strong_heart=Strong Heart
+potion.sweltering=Sweltering
+potion.webbed=Webbed
+
+message.webbed_mash_text=Mash WASD!
+
+death.attack.cold=%1$s froze to death
