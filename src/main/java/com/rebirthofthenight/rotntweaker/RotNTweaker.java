@@ -4,7 +4,6 @@
     import com.rebirthofthenight.rotntweaker.content.entity.EntitySmeltingVesselProjectile;
     import com.rebirthofthenight.rotntweaker.content.entity.RenderSmeltingVesselProjectile;
     import com.rebirthofthenight.rotntweaker.content.items.ItemSmeltingVessel;
-    import com.rebirthofthenight.rotntweaker.content.player.InputHandler;
     import com.rebirthofthenight.rotntweaker.content.player.PlayerTicksFrozen;
     import com.rebirthofthenight.rotntweaker.content.player.PlayerTicksSweltering;
     import com.rebirthofthenight.rotntweaker.content.potions.*;
@@ -60,6 +59,12 @@
         public static Logger logger;
         public static final SimpleNetworkWrapper NETWORK = NetworkRegistry.INSTANCE.newSimpleChannel(MODID);
 
+        @SidedProxy(
+                clientSide = "com.rebirthofthenight.rotntweaker.ClientProxy",
+                serverSide = "com.rebirthofthenight.rotntweaker.CommonProxy"
+        )
+        public static CommonProxy sidedProxy;
+
         public static final Potion POTION_SOULSTREAM = new PotionSoulStream().setRegistryName(MODID, "soul_stream");
         public static final Potion POTION_CLEAN = new PotionClean().setRegistryName(MODID, "clean");
         public static final Potion POTION_WEBBED = new PotionWebbed().setRegistryName(MODID, "webbed");
@@ -102,7 +107,7 @@
 
         @EventHandler
         public void init(FMLInitializationEvent event) {
-            MinecraftForge.EVENT_BUS.register(new InputHandler());
+            sidedProxy.onInit(event);
 
             NETWORK.registerMessage(KeyPressMessageHandler.class, KeyPressMessage.class, 0, Side.SERVER);
 
