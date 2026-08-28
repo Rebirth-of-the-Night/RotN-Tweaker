@@ -2,9 +2,7 @@
 
     import com.rebirthofthenight.rotntweaker.config.RotNConfig;
     import com.rebirthofthenight.rotntweaker.content.entity.EntitySmeltingVesselProjectile;
-    import com.rebirthofthenight.rotntweaker.content.entity.RenderSmeltingVesselProjectile;
     import com.rebirthofthenight.rotntweaker.content.items.ItemSmeltingVessel;
-    import com.rebirthofthenight.rotntweaker.content.player.InputHandler;
     import com.rebirthofthenight.rotntweaker.content.player.PlayerTicksFrozen;
     import com.rebirthofthenight.rotntweaker.content.player.PlayerTicksSweltering;
     import com.rebirthofthenight.rotntweaker.content.potions.*;
@@ -16,21 +14,15 @@
     import com.rebirthofthenight.rotntweaker.tweaks.rotn.*;
     import com.rebirthofthenight.rotntweaker.tweaks.rotn.torch.particles.*;
     import net.minecraft.block.state.IBlockState;
-    import net.minecraft.client.*;
-    import net.minecraft.client.particle.*;
-    import net.minecraft.client.renderer.block.model.ModelResourceLocation;
     import net.minecraft.item.Item;
     import net.minecraft.potion.Potion;
     import net.minecraft.util.*;
     import net.minecraft.world.biome.Biome;
-    import net.minecraftforge.client.event.ModelRegistryEvent;
-    import net.minecraftforge.client.model.ModelLoader;
     import net.minecraftforge.common.*;
     import net.minecraftforge.common.config.Config;
     import net.minecraftforge.common.config.ConfigManager;
     import net.minecraftforge.common.util.*;
     import net.minecraftforge.event.RegistryEvent;
-    import net.minecraftforge.fml.client.registry.RenderingRegistry;
     import net.minecraftforge.fml.common.*;
     import net.minecraftforge.fml.common.Mod.*;
     import net.minecraftforge.fml.common.event.*;
@@ -49,16 +41,22 @@
     import java.util.List;
 
     @Mod.EventBusSubscriber
-    @Mod(modid = RotNTweaker.MODID, name = RotNTweaker.NAME, version = RotNTweaker.VERSION)
+    @Mod(modid = RotNTweaker.MODID, name = RotNTweaker.NAME, version = RotNTweaker.VERSION, useMetadata = true)
     public class RotNTweaker {
 
         // -Dlegacy.debugClassLoading=true -Dlegacy.debugClassLoadingSave=true
         public static final String MODID = "rotntweaker";
         public static final String NAME = "RotN Tweaker";
-        public static final String VERSION = "0.1.0";
+        public static final String VERSION = RotNTweakerConsts.VERSION;
 
         public static Logger logger;
         public static final SimpleNetworkWrapper NETWORK = NetworkRegistry.INSTANCE.newSimpleChannel(MODID);
+
+        @SidedProxy(
+                clientSide = "com.rebirthofthenight.rotntweaker.ClientProxy",
+                serverSide = "com.rebirthofthenight.rotntweaker.CommonProxy"
+        )
+        public static CommonProxy sidedProxy;
 
         public static final Potion POTION_SOULSTREAM = new PotionSoulStream().setRegistryName(MODID, "soul_stream");
         public static final Potion POTION_CLEAN = new PotionClean().setRegistryName(MODID, "clean");
@@ -81,6 +79,7 @@
 
         @EventHandler
         public void preInit(FMLPreInitializationEvent event) {
+            MinecraftForge.EVENT_BUS.register(sidedProxy);
             MinecraftForge.EVENT_BUS.register(PotionClean.class);
             MinecraftForge.EVENT_BUS.register(PotionWebbed.class);
             MinecraftForge.EVENT_BUS.register(PotionCardiacArrest.class);
@@ -98,46 +97,30 @@
 
             logger = event.getModLog();
             ConfigManager.sync(RotNTweaker.MODID, Config.Type.INSTANCE);
+            sidedProxy.onPreInit(event);
         }
 
         @EventHandler
         public void init(FMLInitializationEvent event) {
-            MinecraftForge.EVENT_BUS.register(new InputHandler());
+            sidedProxy.onInit(event);
 
             NETWORK.registerMessage(KeyPressMessageHandler.class, KeyPressMessage.class, 0, Side.SERVER);
 
             NETWORK.registerMessage(TicksFrozenMessageHandler.class, TicksFrozenMessage.class, 1, Side.CLIENT);
         }
 
-
-        @SideOnly(Side.CLIENT)
         @EventHandler
-        public void postInitClient(FMLPostInitializationEvent event) {
-            ParticleFlame2.FLAME2 = registerParticle("flame2", new ParticleFlame2.Factory());
-            ParticleNone.NONE = registerParticle("none", new ParticleNone.Factory());
-
-            if (Loader.isModLoaded("pyrotech") && Loader.isModLoaded("betterwithmods")) {
-                MinecraftForge.EVENT_BUS.register(new BWM2Pyrotech());
-            }
-        }
-
-        @EventHandler
-        public void postInitServer(FMLPostInitializationEvent event) {
+        public void postInit(FMLPostInitializationEvent event) {
+            sidedProxy.onPostInit(event);
             //System.out.println(Arrays.toString(RotNConfig.POTIONS.cleanRemovedPotion));
             CLEAN_REMOVED_POTIONS = RotNConfig.createPotionSet(RotNConfig.POTIONS.clean.cleanRemovedPotion);
             FREEZING_BIOMES = RotNConfig.createBiomeSet(RotNConfig.POTIONS.freezing.playerFreezeBiomes);
             FREEZING_BLOCKS = RotNConfig.createBlockstateMap(RotNConfig.POTIONS.freezing.playerFreezeBlocks);
             SWELTERING_BIOME_DATA = RotNConfig.createBiomeToIntsMap(RotNConfig.POTIONS.sweltering.playerSwelteringBiomes, 4);
-        }
 
-        @SideOnly(Side.CLIENT)
-        private static EnumParticleTypes registerParticle(String name, IParticleFactory factory) {
-            EnumParticleTypes r = EnumHelper.addEnum(EnumParticleTypes.class, name.toUpperCase(),
-                new Class[]{String.class, int.class, boolean.class},
-                name, EnumParticleTypes.values().length, false
-            );
-            Minecraft.getMinecraft().effectRenderer.registerParticle(r.getParticleID(), factory);
-            return r;
+            if (Loader.isModLoaded("pyrotech") && Loader.isModLoaded("betterwithmods")) {
+                MinecraftForge.EVENT_BUS.register(new BWM2Pyrotech());
+            }
         }
 
         @SubscribeEvent
@@ -168,18 +151,6 @@
 
                 event.getRegistry().register(Items.smeltingVessel);
             }
-        }
-
-        @SideOnly(Side.CLIENT)
-        @SubscribeEvent
-        public static void registerRenderers(ModelRegistryEvent event) {
-            RenderingRegistry.registerEntityRenderingHandler(EntitySmeltingVesselProjectile.class, RenderSmeltingVesselProjectile::new);
-        }
-
-        @SideOnly(Side.CLIENT)
-        @SubscribeEvent
-        public static void registerTextures(ModelRegistryEvent event) {
-            ModelLoader.setCustomModelResourceLocation(Items.smeltingVessel, 0, new ModelResourceLocation(Items.smeltingVessel.getRegistryName(), "inventory"));
         }
 
 

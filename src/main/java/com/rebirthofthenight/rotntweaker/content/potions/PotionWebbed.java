@@ -4,12 +4,9 @@ import com.rebirthofthenight.rotntweaker.RotNTweaker;
 import com.rebirthofthenight.rotntweaker.config.RotNConfig;
 import com.rebirthofthenight.rotntweaker.render.overlay.ClientEventHandler;
 import net.minecraft.client.Minecraft;
-import net.minecraft.client.entity.EntityPlayerSP;
 import net.minecraft.client.gui.ScaledResolution;
 import net.minecraft.client.renderer.GlStateManager;
 import net.minecraft.client.renderer.OpenGlHelper;
-import net.minecraft.client.renderer.texture.TextureAtlasSprite;
-import net.minecraft.client.renderer.texture.TextureMap;
 import net.minecraft.client.resources.I18n;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.SharedMonsterAttributes;
@@ -19,13 +16,12 @@ import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.potion.PotionEffect;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.world.World;
-import net.minecraftforge.client.GuiIngameForge;
 import net.minecraftforge.client.event.RenderGameOverlayEvent;
-import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.entity.living.LivingHurtEvent;
 import net.minecraftforge.event.entity.living.PotionEvent;
 import net.minecraftforge.fml.common.eventhandler.EventPriority;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
+import net.minecraftforge.fml.common.gameevent.TickEvent;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 import org.lwjgl.opengl.GL11;
@@ -109,8 +105,6 @@ public class PotionWebbed extends PotionBase {
                 player.getEntityData().setLong("webbed_grace_period_end", world.getTotalWorldTime() + RotNConfig.POTIONS.webbed.webbedGraceTicks);
                 //Reset tick counter to 0
                 player.getEntityData().setInteger("webbed_struggle", 0);
-                Minecraft.getMinecraft().player.getEntityData().setInteger("webbed_struggle", 0);
-                return;
             }
         }
     }
@@ -124,7 +118,6 @@ public class PotionWebbed extends PotionBase {
                 if (player.isPotionActive(RotNTweaker.POTION_WEBBED)) {
                     player.removePotionEffect(RotNTweaker.POTION_WEBBED);
                     player.getEntityData().setLong("webbed_grace_period_end", player.getEntityWorld().getTotalWorldTime() + RotNConfig.POTIONS.webbed.webbedGraceTicks);
-                    Minecraft.getMinecraft().player.getEntityData().setLong("webbed_grace_period_end", player.getEntityWorld().getTotalWorldTime() + RotNConfig.POTIONS.webbed.webbedGraceTicks);
                 }
             }
         }
@@ -135,6 +128,7 @@ public class PotionWebbed extends PotionBase {
         return world.getTotalWorldTime() < gracePeriodEnd;
     }
 
+    @SideOnly(Side.CLIENT)
     private static boolean isGracePeriodActiveClient() {
         long gracePeriodEnd = Minecraft.getMinecraft().player.getEntityData().getLong("webbed_grace_period_end");
         return Minecraft.getMinecraft().world.getTotalWorldTime() < gracePeriodEnd;
@@ -165,30 +159,33 @@ public class PotionWebbed extends PotionBase {
 
     @SubscribeEvent
     public static void onPotionRemoved(PotionEvent.PotionRemoveEvent event) {
-        if (!event.getEntity().world.isRemote) {
-
-
-            if (event.getPotion().equals(RotNTweaker.POTION_WEBBED)) {
-                event.getEntityLiving().getEntityAttribute(SharedMonsterAttributes.MOVEMENT_SPEED).removeModifier(SLOWNESS_UUID);
-                if (event.getEntity() instanceof EntityPlayer) {
-                    event.getEntity().getEntityData().setInteger("webbed_struggle", 0);
-                    Minecraft.getMinecraft().player.getEntityData().setInteger("webbed_struggle", 0);
-                }
-            }
-        }
+        if (event.getPotion() != RotNTweaker.POTION_WEBBED) return;
+        resetWebbedState(event.getEntityLiving());
     }
 
     @SubscribeEvent
     public static void onPotionExpire(PotionEvent.PotionExpiryEvent event) {
-        if (!event.getEntity().world.isRemote) {
+        final PotionEffect effect = event.getPotionEffect();
+        if (effect == null || effect.getPotion() != RotNTweaker.POTION_WEBBED) return;
+        resetWebbedState(event.getEntityLiving());
+    }
 
-            if (event.getPotionEffect().getPotion().equals(RotNTweaker.POTION_WEBBED)) {
-                event.getEntityLiving().getEntityAttribute(SharedMonsterAttributes.MOVEMENT_SPEED).removeModifier(SLOWNESS_UUID);
-                if (event.getEntity() instanceof EntityPlayer) {
-                    event.getEntity().getEntityData().setInteger("webbed_struggle", 0);
-                    Minecraft.getMinecraft().player.getEntityData().setInteger("webbed_struggle", 0);
-                }
-            }
+    @SideOnly(Side.CLIENT)
+    @SubscribeEvent
+    public static void onClientTick(TickEvent.ClientTickEvent event) {
+        if (event.phase != TickEvent.Phase.START) return;
+        final EntityPlayer player = Minecraft.getMinecraft().player;
+        if (player != null && !player.isPotionActive(RotNTweaker.POTION_WEBBED)) {
+            player.getEntityData().removeTag("webbed_struggle");
+        }
+    }
+
+    private static void resetWebbedState(final EntityLivingBase entity) {
+        if (!entity.world.isRemote) {
+            entity.getEntityAttribute(SharedMonsterAttributes.MOVEMENT_SPEED).removeModifier(SLOWNESS_UUID);
+        }
+        if (entity instanceof EntityPlayer) {
+            entity.getEntityData().removeTag("webbed_struggle");
         }
     }
 

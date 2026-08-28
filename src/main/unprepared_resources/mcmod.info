@@ -5,10 +5,8 @@
   "description": "Custom mod for Rebirth of the Night",
   "version": "${version}",
   "mcversion": "${mcversion}",
-  "url": "rebirthofthenight.com",
   "updateUrl": "",
-  "authorList": ["ExampleDude"],
-  "credits": "The Forge and FML guys, for making this example",
+  "authorList": ["Rebirth of the Night Team"],
   "logoFile": "",
   "screenshots": [],
   "dependencies": []
