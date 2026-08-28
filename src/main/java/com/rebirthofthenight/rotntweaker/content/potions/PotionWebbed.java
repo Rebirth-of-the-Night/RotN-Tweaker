@@ -128,6 +128,7 @@ public class PotionWebbed extends PotionBase {
         return world.getTotalWorldTime() < gracePeriodEnd;
     }
 
+    @SideOnly(Side.CLIENT)
     private static boolean isGracePeriodActiveClient() {
         long gracePeriodEnd = Minecraft.getMinecraft().player.getEntityData().getLong("webbed_grace_period_end");
         return Minecraft.getMinecraft().world.getTotalWorldTime() < gracePeriodEnd;
@@ -169,6 +170,7 @@ public class PotionWebbed extends PotionBase {
         resetWebbedState(event.getEntityLiving());
     }
 
+    @SideOnly(Side.CLIENT)
     @SubscribeEvent
     public static void onClientTick(TickEvent.ClientTickEvent event) {
         if (event.phase != TickEvent.Phase.START) return;
