@@ -8,7 +8,7 @@ plugins {
     id("com.gtnewhorizons.retrofuturagradle") version "2.0.2"
 }
 
-version = "0.1.0"
+version = "0.2.1"
 group = "com.rebirthofthenight.rotntweaker" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 
 sourceSets {
