@@ -21,6 +21,6 @@ plugins {
     // If in a Nix shell, just use toolchains provided by Nix
     if (System.getenv("IN_NIX_SHELL") == null) {
         // Automatic toolchain provisioning
-        id("org.gradle.toolchains.foojay-resolver-convention") version "0.4.0"
+        id("org.gradle.toolchains.foojay-resolver-convention") version "0.10.0"
     }
 }
