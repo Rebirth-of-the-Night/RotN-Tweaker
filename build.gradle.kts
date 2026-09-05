@@ -3,7 +3,7 @@ import com.gtnewhorizons.retrofuturagradle.mcp.DeobfuscateTask
 plugins {
     id("java-library")
     id("maven-publish")
-    id("org.jetbrains.gradle.plugin.idea-ext") version "1.1.8"
+    id("org.jetbrains.gradle.plugin.idea-ext") version "1.4.1"
     id("eclipse")
     id("com.gtnewhorizons.retrofuturagradle") version "2.0.2"
 }
