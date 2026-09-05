@@ -81,7 +81,7 @@ repositories {
 dependencies {
     implementation(rfg.deobf("abc:hooklib:3.4"))
 
-    implementation("CraftTweaker2:CraftTweaker2-MC1120-Main:1.12-4.1.20.702:deobf")
+    implementation("CraftTweaker2:CraftTweaker2-MC1120-Main:1.12-4.1.20.716:deobf")
     compileOnly("mezz.jei:jei_1.12.2:4.15.0.291:api")
 
     implementation(rfg.deobf("curse.maven:rustic-256141:3107974"))
